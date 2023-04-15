@@ -1,5 +1,10 @@
 [
   {
+    "name": "CEA",
+    "link": "https://www.cea.fr/",
+    "image": "images/social/cea.svg"
+  },	
+  {
     "name": "Github",
     "link": "https://github.com/cea-trust-platform/trust-code",
     "image": "images/social/github.svg"
