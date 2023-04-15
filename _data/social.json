@@ -1,12 +1,12 @@
 [
   {
     "name": "Github",
-    "link": "https://github.com/zerostaticthemes/jekyll-serif-theme",
+    "link": "https://github.com/cea-trust-platform/trust-code",
     "image": "images/social/github.svg"
   },
   {
-    "name": "Twitter",
-    "link": "https://twitter.com/zerostaticio",
-    "image": "images/social/twitter.svg"
+    "name": "YouTube",
+    "link": "https://www.youtube.com/@ceatrustplatform8802",
+    "image": "images/social/youtube.svg"
   }
 ]
