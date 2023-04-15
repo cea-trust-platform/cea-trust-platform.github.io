@@ -5,4 +5,4 @@ description: About
 bodyClass: page-about
 ---
 
-TRUST is written in C++
+TRUST is written in C++ (230K lines)
