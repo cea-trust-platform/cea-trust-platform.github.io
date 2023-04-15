@@ -6,8 +6,9 @@ logo:
   mobile: "images/logo/logo.png"
   mobile_height: "32px"
   mobile_width: "32px"
-  desktop: "images/logo/logo.png"
-  desktop_height: "240px"
+  #desktop: "images/logo/logo.png"
+  desktop: "images/logo/logo_trust.gif"
+  desktop_height: "90px"
   desktop_width: "480px"
 
 home: 
