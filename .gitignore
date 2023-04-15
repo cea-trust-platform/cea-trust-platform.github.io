@@ -20,3 +20,8 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 .idea
+
+# Eclipse stuff
+.cproject
+.project
+.settings/
