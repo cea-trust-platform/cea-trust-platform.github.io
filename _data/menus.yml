@@ -1,9 +1,9 @@
 main:
-  - name: "News"
-    url: "/news/"
-    weight: 2
   - name: "About"
     url: "/about/"
+    weight: 2
+  - name: "News"
+    url: "/news/"
     weight: 3
   - name: "Packages"
     url: "/packages/"
