@@ -49,4 +49,23 @@ td, th {
 
 - **Stéphane Veys**
 
-TODO
+- **Benoit Mathieu**
+
+- **Thomas Fortin**
+
+- **Marc Elmo**
+
+- **Eli Laucoin**
+
+- **Fabien Perdu**
+
+- **Christophe Calvin**
+
+- **Olga Cueto**
+
+- **Philippe Emonot**
+
+- **And others !**
+
+
+
