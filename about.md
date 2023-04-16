@@ -53,3 +53,6 @@ TRUST serves as a kernel for several independent private projects. As all the ba
 
 TRUST is now the foundation for several applications related to nuclear studies and safety, neutronics, porous media, batteries, fuel cells, and more.
 
+# How to compile TRUST ?
+
+In order to clone and compile the TRUST platform via a git configuration, open a bash terminal and simply execute the commands available in this **[README](https://github.com/cea-trust-platform/trust-code#readme)**.
