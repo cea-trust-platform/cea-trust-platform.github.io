@@ -5,8 +5,8 @@ main:
   - name: "News"
     url: "/news/"
     weight: 3
-  - name: "Packages"
-    url: "/packages/"
+  - name: "Classes"
+    url: "/classes/"
     weight: 4
   - name: "Team"
     url: "/team/"

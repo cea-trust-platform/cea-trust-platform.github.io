@@ -11,10 +11,10 @@ logo:
   desktop_width: "480px"
 
 home: 
-  limit_packages: 6
+  limit_classes: 6
 
 collections:
-  packages:
+  classes:
     output: true
     sort_by: weight
   team:
@@ -23,9 +23,9 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "packages"
+      type: "classes"
     values:
-      layout: "package"
+      layout: "classe"
   - scope:
       path: ""
       type: "team"
