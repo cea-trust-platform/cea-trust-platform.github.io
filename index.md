@@ -8,6 +8,8 @@ intro_image_hide_on_mobile: true
 show_call_box: true
 ---
 
+<img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/logo/logo_trust_cea.png?raw=true" alt="VDF" width="100"/>
+
 # TRUST - The CEA's open source HPC platform
 
 TRUST is a High Performance Computing (HPC) thermohydraulic engine for Computational Fluid Dynamics (CFD) developped at the Departement of System and Structure Modelisation (DM2S) of the French Atomic Energy Commission (CEA).
