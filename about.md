@@ -14,6 +14,11 @@ TRUST supports and has been ported to run on Linux distributions and MacOS. Wind
 
 The platform is extensively tested (every day) on almost all distributions. The test database consists of about 1300 test cases (executed via ctest) and about 120 validation forms (executed via jupyter-notebook).
 
+Using the TRUST post-processing format, it is possible to animate your simulations with a very nice particle visualization. This is done by the Snorky's project (**page under construction**) and can give something like that (click on the image to see the video on the youtube channel).
+
+<div align="center">
+  <a href="https://youtu.be/79mzSkn6yJk"><img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/logo/logo-snorky.png?raw=true" alt="TRUST LOGO SNORKY" width="500px"></a>
+</div>
 
 # Historical background
 
