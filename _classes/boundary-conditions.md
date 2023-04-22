@@ -5,7 +5,9 @@ weight: 6
 
 There is no sense to talk about numerical simulations without talking about the boundary conditions ! In order to close the discretized the system, consistent boundary conditions must be defined.
 
-The platform TRUST implements a huge number of boundary conditions (BC) that all inherit from the C++ class `Cond_lim_base`. Here are the available classes that can be used to define your BC's in a TRUST simulation.
+The platform TRUST implements a huge number of boundary conditions (BC) that all inherit from the C++ class `Cond_lim_base`. Click **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/classCond__lim__base.html)** to see the Doxygen documentation of this class.
+
+Here is a short summary of the available classes aliases that can be used to define your BC's in a TRUST simulation.
 
 # Dirichlet-type Boundary Conditions
 

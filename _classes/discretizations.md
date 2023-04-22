@@ -5,7 +5,9 @@ weight: 2
 
 Solving a TRUST problem requires the user to select a certain discretization which allows the code to pass the treated equations from a continuous to a discretized form. 
 
-TRUST supports mainly four discretizations, all derived from the C++ class `Discretisation_base`. The choice of the discretization is dependant on the mesh type and (can be, not always ...) on the problem. Here are the available discretizations in the TRUST platform.
+TRUST supports mainly four discretizations, all derived from the C++ class `Discretisation_base`. Click **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/classDiscretisation__base.html)** to see the Doxygen documentation of this class.
+
+The choice of the discretization is dependant on the mesh type and (can be, not always ...) on the problem. Here are the available discretizations in the TRUST platform.
 
 # The Finite Volume Difference (VDF) discretization
 

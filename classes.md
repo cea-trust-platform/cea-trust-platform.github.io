@@ -13,4 +13,6 @@ TRUST is a powerful and robust HPC CFD software. The code consits of a huge Kern
 
 TRUST allows basically 2D and 3D simulations on almost all types of meshes. Several discretizations (see later in the Discretizations section) allow performing 2D axi-symetrical simulations. Same, 1D cases are possible if a dedicated discretization is used.
 
-Have a look on the most important TRUST classes in what follows. This can help you in defining your application and in setting up your simulation ! If you are interested in checking all the available classes in TRUST, you can check the TRUST Doxygen documentation which is available **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/index.html)**.
+Have a look on the most important TRUST classes in what follows. This can help you in defining your application and in setting up your simulation ! 
+
+If you are interested in checking all the available classes in TRUST, you can check the TRUST Doxygen documentation which is available **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/index.html)**.

@@ -5,7 +5,7 @@ weight: 4
 
 It is mendatory to define a time integration scheme in order to perform a TRUST calculation. Solving a stationary problem is currently not possible (work in progress in a private application but not yet finalized). 
 
-TRUST implements a large selection of time schemes where the use selection is kept as a choice for the user. It is possible to perform completely pure explicit or even pure implicit integration. The code also allows to employ a semi-implicit time integration.
+TRUST implements a large selection of time schemes where the use selection is kept as a choice for the user. It is possible to perform completely pure explicit or even pure implicit integration. The code also allows to employ a semi-implicit time integration. All the implemented classes derive from the base class `Schema_Temps_base`. Click **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/classSchema__Temps__base.html)** to see the Doxygen documentation of this class.
 
 The basic point that **should be** taken into account is to pay attention to the time-step and the stability criteria. For example, if one selects an explicit time scheme, both the Courant–Friedrichs–Lewy (CFL) and the Von-Neumann criteria must be respected in order to obtain stable results. This constraint can be relaxed when employing an implicit integrator. 
 

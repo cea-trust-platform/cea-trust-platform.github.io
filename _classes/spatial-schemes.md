@@ -3,7 +3,11 @@ title: "Spatial schemes"
 weight: 3
 ---
 
-TRUST implements a wide number of spatial schemes that can be employed to discretize the convective term. However, these schemes are **dependent** of the employed discretization and are thus summarized in what follows.
+The spatial discretization of each term in a given equation is carried out in the TRUST platform by whjat we call the **operators** (operators for convective terms, diffusion, gradient, divergence, ...) It is important to keep in mind that all these operators are **dependent** of the employed discretization; in particular on the variables localisation.
+
+In the platform TRUST, all operators derive from the base class `Operateur_base`. Click **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/classOperateur__base.html)** to see the Doxygen documentation of this class.
+
+In what follows, the available convective operator schemes are summarized.
 
 **Attention:** The diffusion term is more or less a Laplacien operator and is thus always discretized by a centered difference scheme.
 
