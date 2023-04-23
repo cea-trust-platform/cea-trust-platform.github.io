@@ -8,20 +8,26 @@ main:
   - name: "Classes"
     url: "/classes/"
     weight: 4
+  - name: "Simulation"
+    url: "/simulation/"
+    weight: 5
   - name: "Team"
     url: "/team/"
-    weight: 5
+    weight: 6
   - name: "Links"
     url: "/links/"
-    weight: 6
+    weight: 7
   - name: "Contact"
     url: "/contact/"
-    weight: 7
+    weight: 8
 
 footer:
   - name: "Home"
     url: "/"
     weight: 1
+  - name: "News"
+    url: "/news/"
+    weight: 2
   - name: "Contact"
     url: "/contact/"
-    weight: 2
+    weight: 3
