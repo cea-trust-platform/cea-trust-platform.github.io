@@ -50,7 +50,7 @@ Prepare a meshed domain that will be used in the simulation. In this example, a 
 
 It is important to note the names of all the boundaries because they will need to be specified when imposing boundary conditions. Here is a visualization of the mesh used in the simulation.
 
-<img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/simulation/mesh.png?raw=true" alt="Mesh" width="700"/>
+<img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/simulation/mesh.png?raw=true" alt="Mesh" width="700"/>
 
 Now, you can start constructing your data file.
 
@@ -224,7 +224,7 @@ Save your Obstacle.data file and run the simulation by doing:
 
 Now, you can visualize your results! You should see an animation similar to the one shown below!
 
-<img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/simulation/Obstacle.gif?raw=true" alt="Obstacle" width="800"/>
+<img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/simulation/Obstacle.gif?raw=true" alt="Obstacle" width="800"/>
 
 Also, check out our **[YouTube](https://www.youtube.com/@ceatrustplatform8802)** channel. Dont forget to like the page! 😜
 

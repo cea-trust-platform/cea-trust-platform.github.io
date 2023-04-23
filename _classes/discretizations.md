@@ -25,7 +25,7 @@ td, th {
 
 | |
 | :---: |
-| <img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/illustrations/vdf.png?raw=true" alt="VDF" width="400"/> | 
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/illustrations/vdf.png?raw=true" alt="VDF" width="400"/> | 
 |*2D staggered grid zoomed VDF description: scalars stored at the cell center (black points), x−horizontal velocity component at the horizontal faces of the cell (green point), y−horizontal velocity component at the vertical faces of the cell (red point). Green and red dotted control volumes are used to solve the horizontal (green) and vertical (red) velocity components equations.* |
 
 
@@ -41,7 +41,7 @@ This discretization **does not** supports 2D axi-symetrical configurations and *
 
 | |
 | :---: |
-| <img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/illustrations/vef.jpg?raw=true" alt="VEF" width="700"/> |
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/illustrations/vef.jpg?raw=true" alt="VEF" width="700"/> |
 |*2D zoomed VEF description: scalars (except pressure) and velocity vector field are stored at the centers of the faces (red arrows). Pressure at the center of each triangle and at the vertices (black points).* |
 
 # The PolyMAC-series discretization
@@ -50,7 +50,7 @@ The PolyMAC discretization is a series of Marker-and-Cell (MAC) schemes that can
 
 | |
 | :---: |
-| <img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/illustrations/polymac_0.png?raw=true" alt="PolyMAC" width="400"/> |
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/illustrations/polymac_0.png?raw=true" alt="PolyMAC" width="400"/> |
 | *3D illustration of the storing locations used with the PolyMAC discretization.* |
 | *Elements at black points, faces at green points, nodes at red points and edges at blue points.* |
 
@@ -79,13 +79,13 @@ The PolyMAC discretization is a series of Marker-and-Cell (MAC) schemes that can
 
 | |
 | :---: |
-| <img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/illustrations/polymac_1.png?raw=true" alt="PolyMAC" width="700"/> |
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/illustrations/polymac_1.png?raw=true" alt="PolyMAC" width="700"/> |
 |*Mesh stencil illustrated with the PolyMAC discretization.* |
 
 
 | |
 | :---: |
-| <img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/illustrations/polymac_2.png?raw=true" alt="PolyMAC" width="600"/> |
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/illustrations/polymac_2.png?raw=true" alt="PolyMAC" width="600"/> |
 |*Examples of computational domains/meshes used with the PolyMAC discretization.* |
 
 

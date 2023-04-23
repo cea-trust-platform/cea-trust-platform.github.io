@@ -29,14 +29,14 @@ td, th {
 
 | |
 | :---: |
-| <img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/illustrations/mesh_gamelan.png?raw=true" alt="GAMELAN" width="600"/> | 
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/illustrations/mesh_gamelan.png?raw=true" alt="GAMELAN" width="600"/> | 
 |*Example of a 2D geometry meshed with the TRUST Mailler class. Here, 6 blocks (Pave class) are used: 3 cavities, 2 vents and a pipe. Mailler class merges and raccords the 6 blocs.* |
 
 TRUST offers the possibility to modify the generated mesh and to perform specific operations. For example, it is possible to regroup and rename the boundaries, create groups, clean nodes, refine the mesh, dilate, rotate, transform, etc ... It is also possible to polyhedrise the elemnts (change the type of the hexas to be able to use the PolyMAC discretization for example). Since certain discretizations accept only tetrahedral elements (triangles in 2D), TRUST offers the possibility to split the hexas into tetras (see the next figure for example).
 
 | |
 | :---: |
-| <img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/illustrations/mesh_gamelan2.png?raw=true" alt="GAMELAN" width="600"/> | 
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/illustrations/mesh_gamelan2.png?raw=true" alt="GAMELAN" width="600"/> | 
 |*Example of a 2D geometry meshed with the TRUST Mailler class followed by splitting the rectangles to triangles.* |
 
 Detailed information can be found in the TRUST documentation. Have a look to all the classes that inherits from `Interprete_geometrique_base` and `Interprete` (the second is a bit more general).

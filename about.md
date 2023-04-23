@@ -17,7 +17,7 @@ The platform is extensively tested (every day) on almost all distributions. The 
 Using the TRUST post-processing format, it is possible to animate your simulations with a very nice particle visualization. This is done by the Snorky's project (**page under construction**) and can give something like that (click on the image to see the video on the youtube channel).
 
 <div align="center">
-  <a href="https://youtu.be/79mzSkn6yJk"><img src="https://github.com/eliesaikali/TRUST-platform.github.io/blob/esi/TRUST/images/logo/logo-snorky.png?raw=true" alt="TRUST LOGO SNORKY" width="500px"></a>
+  <a href="https://youtu.be/79mzSkn6yJk"><img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/logo/logo-snorky.png?raw=true" alt="TRUST LOGO SNORKY" width="500px"></a>
 </div>
 
 # Historical background
