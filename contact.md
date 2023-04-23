@@ -4,9 +4,9 @@ layout: contact
 description: Contact
 ---
 
-Feel free to cantact the TRUST support team for any issues/suggestions concerning the code, installation and in case of any detected bugs. 
+Feel free to contact the TRUST support team for any issues, suggestions, or detected bugs related to the code or installation. 
 
-You can join the support team at any time you want during the following working hours:
+You may reach out to the support team during the following working hours:
 
 | Day       | Working Hours   |
 | --------- | --------------- |

@@ -4,13 +4,13 @@ layout: page
 description: About
 ---
 
-TRUST is an object-oriented open-source platform written in C++, with approximately 230K lines of code and about 2500 classes. The code is managed on Git and built via CMake. Thanks to the Message Passing Interface (MPI) approach, the code is massively parallel. TRUST uses the automatic generation via Doxygen of HTML documentation from code sources.
+TRUST is an object-oriented open-source platform written in C++, with approximately 230K lines of code and about 2500 classes. The code is managed on Git and built via CMake. Thanks to the Message Passing Interface (MPI) approach, the code is massively parallel. TRUST uses Doxygen to automatically generate HTML documentation from its source code.
 
 The CFD platform has already been used to simulate a 1 m3 fuel cell hydrogen leakage scenario with 2 billion mesh elements using the Direct Numerical Simulation approach (DNS). The simulation was carried out on the IRENE-ROME cluster with 50k MPI processors.
 
 Recently, TRUST has been ported to support GPU acceleration (NVidia/AMD).
 
-TRUST supports and has been ported to run on Linux distributions and MacOS. Windows support is a work in progress.
+TRUST has recently been ported to run on Linux distributions and MacOS. Support for Windows is currently in progress.
 
 The platform is extensively tested (every day) on almost all distributions. The test database consists of about 1300 test cases (executed via ctest) and about 120 validation forms (executed via jupyter-notebook).
 
@@ -24,7 +24,7 @@ Using the TRUST post-processing format, it is possible to animate your simulatio
 
 The acronym TRUST stands for TRioU Software for Thermohydraulics. The platform was born on June 2015 after splitting Trio_U software (version 1.7.1) in two parts: TRUST & **[TrioCFD](https://triocfd.cea.fr/)**. Both parts are now open source and available **[here](https://github.com/cea-trust-platform)** on GitHub. 
 
-Here are the main stages of the evolution of the project, starting from the beginning of the Trio_U project:
+Here are the main stages of the project's evolution, starting from the beginning of the Trio_U project:
 
 - **1994 :** Start of the project Trio_U
 

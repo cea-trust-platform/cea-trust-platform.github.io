@@ -16,9 +16,8 @@ Please post your issues/discussions on **[this](https://github.com/cea-trust-pla
 
 # Breaking news and new features 
 
-- **Avril 2023 :** In the next version (arriving soon), it will be possible to call CoolProp from TRUST !
-Wait for it :)
+- **Avril 2023 :** In the next version (coming soon), it will be possible to call CoolProp from TRUST! Stay tuned for more information.
 
 # Seminars
 
-**Section in progress**
+**This section is currently in progress.**

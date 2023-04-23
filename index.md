@@ -10,7 +10,7 @@ show_call_box: true
 
 # TRUST - The CEA's open source HPC platform
 
-TRUST is a High Performance Computing (HPC) thermohydraulic engine for Computational Fluid Dynamics (CFD) developped at the Departement of System and Structure Modelisation (DM2S) of the French Atomic Energy Commission (CEA).
+TRUST is a High Performance Computing (HPC) thermohydraulic engine for Computational Fluid Dynamics (CFD) developed at the Departement of System and Structure Modelisation (DM2S) of the French Atomic Energy Commission (CEA).
 
 The acronym **TRUST** stands for **TR**io**U** **S**oftware for **T**hermohydraulics. This software was originally designed for conduction, incompressible single-phase, and Low Mach Number (LMN) flows with a robust Weakly-Compressible (WC) multi-species solver. 
 

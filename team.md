@@ -6,7 +6,7 @@ description: The Dream Team
 
 Although the TRUST platform is associated with the Laboratory of High Performance Computing and Numerical Analysis (LCAN) of the Software Engineering and Simulation Service (SGLS) in the Department of System and Structure Modeling (DM2S), researchers from the Thermohydraulics and Fluid Mechanics Service (STMF) contribute significantly to the development of TRUST, particularly in the area of multiphase modeling. 
 
-Below is a list of the main developers and contributors. We would also like to extend our thanks to the former developers who previously worked on this platform!
+Below is a list of the main developers and contributors who have significantly contributed to the development of TRUST, particularly in the area of multi-phase modeling. We would also like to extend our thanks to the former developers who previously worked on this platform!
 
 # Main TRUST Developers (SGLS)
 
@@ -59,13 +59,17 @@ td, th {
 
 - **Fabien Perdu**
 
+- **Ulrich Bieder**
+
 - **Christophe Calvin**
 
 - **Olga Cueto**
 
 - **Philippe Emonot**
 
-- **And others !**
+- ...
+
+- **And lot of others !**
 
 
 
