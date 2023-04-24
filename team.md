@@ -56,6 +56,8 @@ td, th {
 - **Olivier Cioni**
 - **Olivier Lebaigue**
 - **Didier Jamet**
+- **Clarisse Fournier**
+- **Nicolas Tauveron**
 - **Marc Elmo**
 - **Benoit Mathieu**
 - **Emile Garre**

@@ -15,4 +15,4 @@ TRUST allows basically 2D and 3D simulations on almost all types of meshes. Seve
 
 Have a look at the most important TRUST classes in what follows. This can help you in defining your application and in setting up your simulation!
 
-If you are interested in checking all classes available in the platform, you can check the TRUST Doxygen documentation which is available **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/index.html)**.
+If you are interested in checking all classes available in the platform, you can check the TRUST Doxygen documentation which is available **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/index.html)**. You can also refer to the reference manual by clicking on **[this ](https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf)** link.

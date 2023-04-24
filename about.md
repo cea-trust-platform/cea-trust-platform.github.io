@@ -4,7 +4,7 @@ layout: page
 description: About
 ---
 
-TRUST is an object-oriented open-source platform written in C++, with approximately 230K lines of code and about 2500 classes. The code is managed on Git and built via CMake. Thanks to the Message Passing Interface (MPI) approach, the code is massively parallel. TRUST uses Doxygen to automatically generate HTML documentation from its source code.
+TRUST is an object-oriented open-source platform written in C++, with approximately 230K lines of code and about 2500 classes. The code is managed on Git and built via CMake. Thanks to the Message Passing Interface (MPI) approach, the code is massively parallel. TRUST uses Doxygen to automatically generate HTML documentation from its source code (click **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/index.html)** to check the Doxygen documentation). 
 
 The CFD platform has already been used to simulate a 1 m3 fuel cell hydrogen leakage scenario with 2 billion mesh elements using the Direct Numerical Simulation approach (DNS). The simulation was carried out on the IRENE-ROME cluster with 50k MPI processors.
 
@@ -48,7 +48,7 @@ Here are the main stages of the project's evolution, starting from the beginning
 
 - **2021 :** v1.8.4 - Multiphase problem + Weakly Compressible model
 
-- **2022 ... :** Modern C++ code (templates, CRTP, ...), remove MACROS, GPU, ...
+- **2022 ... :** Modern C++ code (templates, CRTP, ...), support GPU (NVidia/AMD), remove MACROS, ...
 
 # Use and application domains
 
