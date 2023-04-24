@@ -43,33 +43,27 @@ td, th {
 | Research Engineer, Ph.D. | Research Engineer, Ph.D. | Ph.D. Student |
 | | [Linkedin](https://www.linkedin.com/in/yannick-gorsse-45770786/), [Research Gate](https://www.researchgate.net/profile/Yannick-Gorsse) | [Linkedin](https://www.linkedin.com/in/corentin-reiss-903840183/)|
 
-# Former TRUST Developers
+# Former TRUST & Trio_U Developers
 
-- **Gauthier Fauchet**
-
+- **Gauthier Fauchet** (former TRUST responsible)
 - **Stéphane Veys**
-
-- **Benoit Mathieu**
-
 - **Thomas Fortin**
-
-- **Marc Elmo**
-
+- **Simone Vandroux**
 - **Eli Laucoin**
-
+- **Patrick Quéméré**
+- **Frederic Ducros**
 - **Fabien Perdu**
-
+- **Olivier Cioni**
+- **Olivier Lebaigue**
+- **Didier Jamet**
+- **Marc Elmo**
+- **Benoit Mathieu**
+- **Emile Garre**
 - **Ulrich Bieder**
-
+- **Sébastien Heib**
 - **Christophe Calvin**
-
+- **Valérie Barthel**
 - **Olga Cueto**
-
 - **Philippe Emonot**
-
 - ...
-
 - **And lot of others !**
-
-
-
