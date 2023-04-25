@@ -19,7 +19,7 @@ To run a TRUST simulation, all you have to do is write a correctly formatted dat
 		COMMENTS */
 		
 	# THESE
-		ALSO
+		TOO
 		...
 		YES ! #
 		
@@ -32,7 +32,7 @@ To run a TRUST simulation, all you have to do is write a correctly formatted dat
 	
 	/* NEITHER IS THIS
 
-In this section, we will consider an example of a test case where all the steps required to write the corresponding data file will be detailed. The selected example is a 2D flow around a square obstacle in an open domain.
+In this section, we will consider an example of a test case where all the steps required to write the corresponding data file will be detailed. The selected example is a 2D flow around a square obstacle in an open domain (Von Karman vortex street). We recomment to use the SI units for all quantities (velocity, viscosity, etc...)
 
 # Step 1 : Create an empty data file
 
@@ -70,20 +70,21 @@ Start by inserting this in Obstacle.data
 	# Domain definition #
 	Domaine dom
 	
-	# BEGIN MESH #
+	# Read the mesh from MED file #
 	Read_MED { domain dom file Mesh.med }
+
+	# Refine the mesh to have better results (optional) #
 	Raffiner_isotrope dom
-	# END MESH #
 
 # Step 4 : Define the discretization and the problem
 
 The mesh used here allows us to use the VDF discretization. So use the class `VDF` to create an instance with the variable `my_discretisation`.
 
-We will solve just the Navier-Stokes equation, so its a hydraulic problem. Create an instance of `Pb_hydraulique` and name it `pb`.
+We will solve just the Navier-Stokes (NS) equations, so its a hydraulic problem. Create an instance of `Pb_hydraulique` and name it `pb`.
 
 Insert this in Obstacle.data 
 
-	# Discretization on hexa or tetra mesh #
+	# Discretization on rectangles (hexa), so use VDF #
 	VDF my_discretisation
 	
 	# Problem definition #
@@ -95,7 +96,7 @@ Its for you to define what time scheme to use. Here, we will use the Euler expli
 
 This bloc contains a lot of parameters, try to read the comments and insert the bloc in Obstacle.data.
 
-	# Time scheme explicit or implicit #
+	# Define your time scheme; here use explicit #
 	Scheme_euler_explicit my_scheme
 	Read my_scheme
 	{
@@ -106,31 +107,17 @@ This bloc contains a lot of parameters, try to read the comments and insert the 
 	    dt_min 5.e-6
 	
 	    # Max time step #
-	    dt_max 5.e-3 # dt_min = dt_max so dt imposed #
+	    dt_max 5.e-3
 	
 	    # facsec such as dt = facsec * min(dt(CFL),dt_max) ; for explicit scheme facsec <= 1. By default facsec equals to 1 #
 	    facsec 0.5
-	
-	    # make the diffusion term in NS equation implicit : disable(0) or enable(1) #
-	    diffusion_implicite 0
 	
 	    # Output criteria #
 	    # .out files printing period #
 	    dt_impr 5.e-3 # Note: small value to print at each time step #
 	
-	    # .sauv files printing period #
-	    dt_sauv 100
-	    periode_sauvegarde_securite_en_heures 23
-	
-	    # Stop if one of the following criteria is checked: #
-	    # End time [s] #
+	    # End time [s] of the simulation #
 	    tmax 10.0
-	
-	    # Max number of time steps #
-	    # nb_pas_dt_max 3 #
-	
-	    # Convergence threshold (see .dt_ev file) #
-	    seuil_statio 1.e-8
 	}
 
 # Step 6 : Assosciate the instantiated objects
@@ -140,9 +127,9 @@ Now, you need to link the domaine, the discretization and the time scheme to the
 Insert this in Obstacle.data
 
 	# Association between the different objects #
-	Associate pb dom
-	Associate pb my_scheme
-	Discretize pb my_discretisation
+	Associate pb dom /* Assosciate domaine */
+	Associate pb my_scheme /* Assosciate time scheme */
+	Discretize pb my_discretisation /* Discretize the domain */
 	
 # Step 7 : Read the problem (medium, equation, BC's, post-processings)
 
@@ -174,10 +161,12 @@ Try to read carefuly the syntax/comments and insert the bloc in Obstacle.data.
 	    Navier_Stokes_standard
 	    {
 	        # Pressure matrix solved with #
-	        Solveur_pression Cholesky { }
+	        Solveur_pression PETSc Cholesky { }
 	
-	        # Two operators are defined #
+	        # Solve the convection operator with a 3rd order QUICK scheme #
 	        Convection { quick }
+
+	        # Solve the diffusion too; remember diffusion always 2nd order centered #
 	        Diffusion { }
 	
 	        # Uniform initial condition for velocity #
@@ -199,7 +188,7 @@ Try to read carefuly the syntax/comments and insert the bloc in Obstacle.data.
 	    {
 	        # Fields #
 	        format lata
-	        fields dt_post 1.e-2  # Note: Warning to memory space if dt_post too small #
+	        fields dt_post 1.e-2
 	        {
 	            vitesse som
 	            vorticite som
@@ -213,20 +202,18 @@ Now, end your data file by inserting this bloc. This will tell TRUST to run and 
 
 	# The problem is solved with #
 	Solve pb
-	
-	End
-	
+
 Save your Obstacle.data file and run the simulation by doing:
 
 	trust Obstacle.data
 
 # Results ! Its cool 🍻🤗🍻
 
-Now, you can visualize your results! You should see an animation similar to the one shown below!
+Now, you can visualize your results! You should see an animation similar to the one shown below! It is the well known Von Karman vortex street!
 
 <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/simulation/Obstacle.gif?raw=true" alt="Obstacle" width="800"/>
 
-Also, check out our **[YouTube](https://www.youtube.com/@ceatrustplatform8802)** channel. Dont forget to like the page! 😜
+Also, check out our **[YouTube](https://www.youtube.com/@ceatrustplatform8802)** channel. Don't forget to like the page! 😜
 
 ---
 
