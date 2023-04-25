@@ -28,7 +28,7 @@ td, th {
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Anida" width="150"/> | <img src="https://media.licdn.com/dms/image/C4E03AQHuYKLg3xf3BQ/profile-displayphoto-shrink_800_800/0/1517341065897?e=1687392000&v=beta&t=K8x--vJB6s3K-FU9zyzdpatyQkCtT3l5VvBb8Og9siA" alt="Luc" width="150"/> | |
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/anida.jpg?raw=true" alt="Anida" width="150"/> | <img src="https://media.licdn.com/dms/image/C4E03AQHuYKLg3xf3BQ/profile-displayphoto-shrink_800_800/0/1517341065897?e=1687392000&v=beta&t=K8x--vJB6s3K-FU9zyzdpatyQkCtT3l5VvBb8Og9siA" alt="Luc" width="150"/> | |
 | **Anida Khizar** | **Luc Lecointre** | |
 | Research Engineer | Research Engineer, Ph.D. | |
 | | [Linkedin](https://www.linkedin.com/in/luc-lecointre-269754a4/), [Research Gate](https://www.researchgate.net/profile/Luc-Lecointre) | |
