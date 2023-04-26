@@ -7,23 +7,23 @@ Do you know that CFD refers to Colorful Fluid Dynamics ? OK, it is not exactly t
 
 Moreover, do you know also that the best moments you spend after running a simulation are those where you visualize your results. With TRUST, this is surely possible. However, keep in mind that you should explicitly define what you want to visualize, which fields, probes, statistics, which format and at what frequency. 
 
-All this is done via the TRUST C++ classes: `Post_processing` or `Post_processings` (aliases `Postraitement` or `Postraitements`. The difference between both classes is that the first creats one post-processing object, while the other can create N object if you ask for N post-processing blocs. These keywords should be placed at the end of the `Problem` bloc. Click **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/classPostraitement__base.html)** to see the Doxygen documentation of the `Postraitement` class.
+All this is done via the TRUST C++ classes: `Post_processing` or `Post_processings` (aliases `Postraitement` or `Postraitements`). The difference between both classes is that the first one creates a single post-processing object, while the other can creates N objects if you ask for N post-processing blocks. These keywords should be placed at the end of the `Problem` block. Click **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/classPostraitement__base.html)** to see the Doxygen documentation of the `Postraitement` class.
 
-For both cases (whatever which class you use, `Post_processing` or `Post_processings`) you can define the following.
+In both cases (whatever which class you use, `Post_processing` or `Post_processings`) you can define the following.
 
 # Probes
 
 This is done by the C++ class `Sonde` or `Sondes` (list of probes). You can request spatial/temporal variation/evolution of any field (should be known by TRUST). The values can be extracted at a single point in space, at a segment of points or in a plane.
 
-**Attention:** The probe coordinates should be given in Cartesian coordinates (X, Y, Z), including axi-symmetrical cases.
+**Attention:** The probe coordinates should be given in Cartesian coordinates (X, Y, Z) even in axisymmetric cases.
 
-# Define New Fields
+# Define New Fields (Advanced Fields)
 
-This is done by the C++ class `Definition_champ`. In this bloc you can create new complex fields for advanced postprocessing.
+This is done by the C++ class `Definition_champs`. In this block, you can create new complex fields for advanced post-processings. For example, post-process custom quantities not directly available from the datafile (average of a field, error between TRUST and analytical solution, ...).
 
 # Write Fields
 
-This is dome by the C++ class `Fields` or `Champs`. Here you can specify the frequency by the keywor `dt_post`. For example, the following syntax is used to visualize the pressure (at center of the elements) each 1000 seconds.
+This is done by the C++ class `Fields` or `Champs`. Here you can specify the frequency by the keyword `dt_post`. For example, the following syntax is used to post-process (and therefore visualize) the pressure (at center of the elements) each 1000 **physical seconds** of the simulation.
 
     Post_processing
     {
@@ -33,15 +33,18 @@ This is dome by the C++ class `Fields` or `Champs`. Here you can specify the fre
         }
     }
 
-It is also possible to precise the format of the output files. This is done by the keywoed `Format` where three formats are available: `Lml`, `Lata` and `Med`. The default format is `Lml`. Results can be visualized by **[VisIt](https://visit-dav.github.io/visit-website/index.html)**, **[Salome](https://www.salome-platform.org/?lang=fr)** (Paravis module), **[Paraview](https://www.paraview.org/)**. It is possible to use **[TecPlot](https://www.tecplot.com/)** too !
+It is also possible to specify the output format of files. This is done by the keywoed `Format`, where three formats are available: `Lml`, `Lata` and `Med`. The default format is `Lml`, used for the non-regression verification only. We recommend `Lata` format for post-processing. Results can be visualized by **[VisIt](https://visit-dav.github.io/visit-website/index.html)**, **[Salome](https://www.salome-platform.org/?lang=fr)** (Paravis module), **[Paraview](https://www.paraview.org/)**. It is possible to use **[TecPlot](https://www.tecplot.com/)** too !
 
-**Note:** It is possible to convert files written with the `Lata` format into `Lml` and `Med` format. This is done by the Class `Lata_to_other`. The syntax is the following
+**Note:** It is possible to convert files written in the `Lata` format into `Lml` and `Med` format. This is done by the Class `Lata_to_other`. The syntax is the following
 
 	lata_to_other med NOM_DU_CAS NOM_DU_CAS
 or 
 
 	lata_to_other lml NOM_DU_CAS NOM_DU_CAS
 	
+**Remark 1:** By default, fields are post-processed on the whole domain. You can choose to post-process fields on a boundary or on a specific domain region.
+
+**Remark 2:** Remember fields location for each discretization! If you specify in post-processing block for a field a different location than where it is computed, values will be interpolated. 
 	
 # List of Existing and Pre-defined Fields
 
@@ -191,8 +194,8 @@ Here is a complete post-processing example taken from the TRUST's `upwind` test 
             # Interpolation de cette composante aux elements #
             compo_graPx_elem Interpolation { localisation elem sources_reference { compo_graPx } }
         }
-        Format lml
-        fields dt_post 1.3
+        Format Lata
+        fields dt_post 1.3 /* physical time */
         {
             pression elem
             vitesse elem
