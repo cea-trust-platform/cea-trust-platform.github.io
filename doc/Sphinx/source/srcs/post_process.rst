@@ -1,7 +1,7 @@
 Post-processing
 ===============
 
-Output files
+Output Files
 ------------
 
 After running, you will find different files in your directory. Here is a short explaination of what you will find in each type of file depending on its extension.
@@ -108,4 +108,3 @@ Here are some actions that you can perform when your simulation is finished:
       trust -evol my_data_file
 
    and access to the probes or open VisIt for 2D/3D visualizations via this tool.
-   
