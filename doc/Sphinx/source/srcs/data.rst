@@ -55,7 +55,7 @@ where:
 -  **WC**: Navier-Stokes equations with energy equation for weakly-compressible fluid under low Mach approach.
 
 
-Domain definition
+Domain Definition
 -----------------
 
 To define the domain, you must name it. This is done thanks to the following block:
