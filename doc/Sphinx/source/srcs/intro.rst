@@ -107,6 +107,8 @@ To launch a calculation with **TRUST**, you need to write a "data file" which is
 
 -  elements between bracket ``[ ]`` are optional.
 
+.. _dataset:
+
 Data File Example: Base Blocks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -130,7 +132,9 @@ Here is the template of a basic sequential data file:
 .. code-block:: bash
 
    # Mesh #
+   # BEGIN MESH #
    Read_file my_mesh.geo ;
+   # END MESH #
 
 .. code-block:: bash
 

@@ -6,9 +6,14 @@
 TRUST Generic Guide
 ===================
 
+.. figure:: https://github.com/cea-trust-platform/trust-code/blob/master/bin/HTML/logo_trust.gif?raw=true
+   :alt: image description
+   :width: 600px
+   :align: center
+
 Hi there 👋 and welcome to the **TRUST Generic Guide** documentation !
 
-This document constitutes the generic guide for **TRUST software** and its **Baltik projects**.
+This document constitutes the generic guide for **TRUST Software**.
 
 :TRUST Website: https://cea-trust-platform.github.io
 
@@ -24,10 +29,10 @@ Table Of Contents
    :caption: Contents:
 
    srcs/intro
-   srcs/refs
    srcs/data
    srcs/pb
    srcs/end_data
    srcs/post_process
    srcs/para
+   srcs/refs
  

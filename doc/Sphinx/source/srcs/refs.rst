@@ -3,23 +3,25 @@ Important references
 
 For details and practices, see:
 
--  `the TRUST tutorial <TRUST_tutorial.pdf>`__,
+-  The **TRUST** Tutorial available `here <https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_tutorial.pdf>`__.
 
--  The **TRUST**\ & **TrioCFD** user slides,
+.. https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_tutorial.pdf
 
--  The **TRUST**\ & **TrioCFD** development slides,
+-  The **TRUST** Reference Manual available `here <https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf>`__.
 
--  `the Project Reference Manual <TRUST_Reference_Manual.pdf>`__.
+.. https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf
+
+-  The **TRUST** user & development slides.
 
 Other references:
 
--  Methodology for incompressible single phase flow
-   (Models_Equations_TRUST.pdf),
+-   The **TRUST** website available `here <https://cea-trust-platform.github.io>`__.
 
--  Trio_U code validation data base & best practice guidelines
-   (Best_Practice_TRUST.pdf),
+.. https://cea-trust-platform.github.io
 
--  Organisation of TrioCFD validation data base (HowTo_Validation.pdf),
+-   Methodology for incompressible single phase flow (Models_Equations_TRUST.pdf).
+
+-   Trio_U code validation data base & best practice guidelines (Best_Practice_TRUST.pdf).
 
 -  To access **TRUST** test case list and most documentation:
 
@@ -27,20 +29,13 @@ Other references:
 
       > trust -index
 
--  To access **TrioCFD** documentation (See how to load TrioCFD
-   environment in the User tutorial):
 
-   ::
+.. note::
+   
+   Remember that you can attend to:
 
-      > triocfd -index
+   -  a user training session (2 days)
 
-| For further information, you can see the **TRUST**/**TrioCFD**
-  website: https://triocfd.cea.fr.
-| Remember that you can attend to:
+   -  a developper training session (2 days)
 
--  a user training session (2 days),
-
--  a developper training session (2 days)
-
-provided by the support team. To request session, send an email to
-trust@cea.fr.
+   provided by the support team. To request session, send an email to trust@cea.fr.

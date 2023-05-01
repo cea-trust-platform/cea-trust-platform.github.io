@@ -1,72 +1,68 @@
 Data setting
 ============
 
-We will now explain how to fill a data file. First you must specify some
-basic information like the dimension of your domain, its name, the
-problem type... To define the problem dimension, we use the following
-keyword:
+We will now explain how to fill a data file. First you must specify some basic information like the dimension of your domain, its name, the problem type... 
 
-.. container:: center
+To define the problem dimension, we use the following keyword:
+
+.. code-block:: bash
+
+   Dimension 2
 
 or
 
-.. container:: center
+.. code-block:: bash
 
-.. _pbs:
+   Dimension 3
 
 Problems
 --------
 
 You have to define the problem type that you wish to solve.
 
-.. container:: center
+.. code-block:: bash
+   
+   Pb_type my_problem
 
-Here are some of the available problem types:
+You can find all the available **TRUST** problems via `this link <https://cea-trust-platform.github.io/classes/problems>`__.
 
--  for incompressible flow:
-   **Pb\_\ :math:`\left[\mbox{\textcolor{magenta}{Thermo}}\right]`\ hydraulique\ :math:`\left[\mbox{\textcolor{darkblue}{\_Concentration}}\right]\hspace{-0.15cm}\left[\mbox{\textcolor{Greeen}{\_Turbulent}}\right]`**,
+.. https://cea-trust-platform.github.io/classes/problems
 
--  for quasi-compressible flow:
-   **Pb_Thermohydraulique\ :math:`\left[\mbox{\textcolor{Greeen}{\_Turbulent}}\right]`\ \_QC**,
+Here are some of the available **TRUST** problem types.
 
--  for weakly compressible flow:
-   **Pb_Thermohydraulique\ :math:`\left[\mbox{\textcolor{Greeen}{\_Turbulent}}\right]`\ \_WC**,
+-  for Incompressible flow: **Pb\_[Thermo]Hydraulic[_Concentration]**
 
--  for solid: **Pb_Conduction**,
+-  for Quasi-Compressible flow: **Pb_Thermohydraulique_QC**
 
--  you can find all `problem
-   types <TRUST_Reference_Manual.pdf#Pbbase>`__ in the Reference Manual.
+-  for Weakly-Compressible flow: **Pb_Thermohydraulique_WC**
+
+-  for Multi-Phase flow: **Pb_Multiphase**
+
+-  for solid: **Pb_Conduction**
 
 where:
 
--  **hydraulique**: means that we will solve Navier-Stokes equations
-   without energy equation,
+-  **hydraulique**: means that we will solve Navier-Stokes equations without energy equation.
 
--  **Thermo**: means that we will solve Navier-Stokes equations with
-   energy equation,
+-  **Thermo**: means that we will solve Navier-Stokes equations with energy equation.
 
--  **Concentration**: that we will solve multiple constituent
-   transportation equations,
+-  **Concentration**: that we will solve multiple constituent transportation equations.
 
--  **Turbulent**: that we will simulate a turbulent flow and specify a
-   turbulent model (RANS or LES). (Since version v1.8.0, Turbulence
-   models are in TrioCFD and not anymore in TRUST).
+-  **Conduction**: resolution of the heat equation.
 
--  **Conduction**: resolution of the heat equation,
+-  **QC**: Navier-Stokes equations with energy equation for quasi-compressible fluid under low Mach approach.
 
--  **QC**: Navier Stokes equations with energy equation for
-   quasi-compressible fluid under low Mach approach,
+-  **WC**: Navier-Stokes equations with energy equation for weakly-compressible fluid under low Mach approach.
 
--  **WC**: Navier Stokes equations with energy equation for weakly
-   compressible fluid under low Mach approach.
 
 Domain definition
 -----------------
 
-To define the domain, you must name it. This is done thanks to the
-following block:
+To define the domain, you must name it. This is done thanks to the following block:
 
-.. container:: center
+.. code-block:: bash
+   
+   Domaine my_domain
 
 Then you must add your mesh to your simulation.
 
@@ -75,227 +71,205 @@ Then you must add your mesh to your simulation.
 Mesh
 ----
 
-Notice the presence of the tags:
+Notice the presence of the tags
 
-| ``#``\ :raw-latex:`\ `\ ``BEGIN``\ :raw-latex:`\ `\ ``MESH``\ :raw-latex:`\ `\ ``#``
-| ``...``
-| ``#``\ :raw-latex:`\ `\ ``END``\ :raw-latex:`\ `\ ``MESH``\ :raw-latex:`\ `\ ``#``
+.. code-block:: bash
 
-in the data file of section `1.3.1 <#data>`__. This is useful for
-parallel calculation (see section `7 <#parallel>`__) if well placed in
-datafile.
+   # BEGIN MESH #
+   ...
+   # END MESH #
+
+
+in the data file of section :ref:`dataset`. This is useful for parallel calculation if well placed in datafile (see section :ref:`Parallel calculation`).
 
 Allowed meshes
 ~~~~~~~~~~~~~~
 
-**TRUST** allows:
+**TRUST** allows all types of meshes if the appropriate spatial discretization is used. See the `Discretizations <https://cea-trust-platform.github.io/classes/discretizations>`__ section on the TRUST's website.
 
--  quadrangular or triangular undeformed meshing for 2D cases (Figure
-   `[2D_mesh] <#2D_mesh>`__),
-
-   .. container:: center
-
--  hexahedral or tetrahedral undeformed meshing for 3D cases (Figure
-   `[3D_mesh] <#3D_mesh>`__).
-
-   .. container:: center
-
-Non standard and hybrid meshing are partially supported thanks to
-PolyMAC discretization! (cf Figure `[hybr] <#hybr>`__)
-
-.. container:: center
+.. https://cea-trust-platform.github.io/classes/discretizations
 
 Import a mesh file
 ~~~~~~~~~~~~~~~~~~
 
-If your mesh was generated with an external tool like
-`Salomé <http://www.salome-platform.org>`__ (open source software),
-`ICEM <http://resource.ansys.com/Products/Other+Products/ANSYS+ICEM+CFD>`__
-(commercial software), `Gmsh <http://gmsh.info/>`__ (open source
-software, included in **TRUST** package) or
-`Cast3M <http://www-cast3m.cea.fr/>`__ (CEA software), then you must use
-one of the following keywords into your data file:
+If your mesh was generated with an external tool like `SALOME <http://www.salome-platform.org>`__ (open source software), `ICEM <http://resource.ansys.com/Products/Other+Products/ANSYS+ICEM+CFD>`__ (commercial software), `Gmsh <http://gmsh.info/>`__ (open source software, included in **TRUST** package) or `Cast3M <http://www-cast3m.cea.fr/>`__ (CEA software), then you must use one of the following keywords into your data file:
 
--  `Read_MED <TRUST_Reference_Manual.pdf#readmed>`__ for a MED file from
-   `Salomé <http://www.salome-platform.org>`__,
-   `Gmsh <http://gmsh.info/>`__,... ,
+-  **Read_MED** for a MED file from SALOME or Gmsh.
 
--  `Read_File <TRUST_Reference_Manual.pdf#readfile>`__ for a binary mesh
-   file from
-   `ICEM <http://resource.ansys.com/Products/Other+Products/ANSYS+ICEM+CFD>`__,
+-  **Read_File** for a binary mesh file from ICEM. 
 
--  for another format, see the `Project Reference
-   Manual <TRUST_Reference_Manual.pdf#read>`__.
+-  for another format, see the `TRUST Reference Manual <https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf>`__.
 
-If you want to learn how to build a mesh with Salomé or Gmsh and read it
-with **TRUST**, you can look at the exercises of the **TRUST** tutorial:
-`here <TRUST_tutorial.pdf#salome>`__ for Salomé and
-`here <TRUST_tutorial.pdf#gmsh>`__ for Gmsh.
+If you want to learn how to build a mesh with SALOME or Gmsh and read it with **TRUST**, you can look at the exercises of the `TRUST Tutorial <https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_tutorial.pdf>`__.
+
+You can have a look too at the `Pre-Processing <https://cea-trust-platform.github.io/classes/pre-processing>`__ section of the TRUST's website.
 
 Quickly create a mesh
 ~~~~~~~~~~~~~~~~~~~~~
 
-Here is an example of a simple geometry (of non complex channel type)
-using the internal tool of **TRUST**:
+Here is an example of a simple geometry (of non complex channel type) using the internal tool of **TRUST**:
 
-.. container:: center
+.. code-block:: bash
 
-| To use this mesh in your data file, you just have to add the previous
-  block in your data file or save it in a file named for example
-  "*my_mesh.geo*" and add the line:
+   Mailler my_domain
+   {
+      # Define the domain with one cavity #
+      # cavity 1m*2m with 5*22 cells #
+      Pave box
+      {
+         Origine 0. 0.
+         Longueurs 1 2
 
-.. container:: center
+         # Cartesian grid #
+         Nombre_de_Noeuds 6 23
 
-| *Do not forget the semicolon at the end of the line!*
+         # Uniform mesh #
+         Facteurs 1. 1.
+      }
+      {
+         # Definition and names of boundary conditions #
+         bord Inlet  X = 0.   0. <= Y <= 2.
+         bord Outlet X = 1.   0. <= Y <= 2.
+         bord Upper  Y = 2.   0. <= X <= 1.
+         bord Lower  Y = 0.   0. <= X <= 1.
+      }
+   }
+
+To use this mesh in your data file, you just have to add the previous block in your data file or save it in a file named for example ``my_mesh.geo`` and add the line:
+
+.. code-block:: bash
+
+   Read_file my_mesh.geo ;
+
+.. note::
+
+   **Do not forget the semicolon at the end of the line!**
 
 Transform mesh within the data file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can also make transformations on your mesh after the **"Mailler"**
-or **"Read_"** command, using the following keywords:
+You can also make transformations on your mesh after the **"Mailler"** or **"Read_"** command, using the following keywords:
 
--  `Trianguler <TRUST_Reference_Manual.pdf#triangulate>`__ to
-   triangulate your 2D cells and create an unstructured mesh.
+-  **Trianguler** to triangulate your 2D cells and create an unstructured mesh.
 
--  `Tetraedriser <TRUST_Reference_Manual.pdf#tetraedriser>`__ to
-   tetrahedralise 3D cells and create an unstructured mesh.
+-  **Tetraedriser** to tetrahedralise 3D cells and create an unstructured mesh.
 
--  `Raffiner_anisotrope <TRUST_Reference_Manual.pdf#raffineranisotrope>`__/`Raffiner_isotrope <TRUST_Reference_Manual.pdf#raffinerisotrope>`__
-   to triangulate/tetrahedralise elements of an untructured mesh.
+-  **Raffiner_anisotrope** or **Raffiner_isotrope** to triangulate/tetrahedralise elements of an untructured mesh.
 
--  `ExtrudeBord <TRUST_Reference_Manual.pdf#extrudebord>`__ to generate
-   an extruded mesh from a boundary of a tetrahedral or an hexahedral
-   mesh. **Note** that ExtrudeBord in VEF generates 3 or 14 tetrahedra
-   from extruded prisms.
+-  **ExtrudeBord** to generate an extruded mesh from a boundary of a tetrahedral or an hexahedral mesh. 
 
--  `RegroupeBord <TRUST_Reference_Manual.pdf#regroupebord>`__ to build a
-   new boundary with several boundaries of the domain.
+   .. note::
 
--  `Transformer <TRUST_Reference_Manual.pdf#transformer>`__ to transform
-   the coordinates of the geometry.
+      ExtrudeBord in VEF generates 3 or 14 tetrahedra from extruded prisms.
 
--  for other commands, see the section
-   `interprete <TRUST_Reference_Manual.pdf#interprete>`__ of the Project
-   Reference Manual.
+-  **RegroupeBord** to build a new boundary with several boundaries of the domain.
 
-**Note** that theses mesh modifications work on all mesh types (i.e.
-also for **\*.geo** or **\*.bin** or **\*.med** files).
+-  **Transformer** to transform the coordinates of the geometry.
+
+For other commands, see the section ``interprete`` of the `TRUST Reference Manual <https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf>`__.
+
+.. note::
+
+   All theses keywords work on all mesh file formats (i.e. also for **\*.geo** or **\*.bin** or **\*.med** files).
 
 Test your mesh
 ~~~~~~~~~~~~~~
 
-| The keyword
-  `Discretiser_domaine <TRUST_Reference_Manual.pdf#discretiserdomaine>`__
-  is useful to discretize the domain (faces will be created) without
-  defining a problem. Indeed, you can create a minimal data file,
-  post-process your mesh in lata format (for example) and visualize it
-  with VisIt.
-| **Note** that you must name all the boundaries!
-| Here is an example of this kind of data file:
+The keyword **Discretiser_domaine** is useful to discretize the domain (faces will be created) without defining a problem. Indeed, you can create a minimal data file, post-process your mesh in lata format (for example) and visualize it with VisIt.
 
-.. container:: center
+.. note::
+
+   You must name all the boundaries to descretize!
+
+Here is an example of this kind of data file (say ``my_data_file.data`` for example):
+
+.. code-block:: bash
+
+   dimension 3
+   Domaine my_domain
+
+   Mailler my_domain
+   {
+      Pave box
+      {
+         Origine 0. 0. 0.
+         Longueurs 1 2 1
+         Nombre_de_Noeuds 6 23 6
+         Facteurs 1. 1. 1.
+      }
+      {
+         bord Inlet X = 0. 0. <= Y <= 2. 0. <= Z <= 1.
+         bord Outlet X = 1. 0. <= Y <= 2. 0. <= Z <= 1.
+         bord Upper Y = 2. 0. <= X <= 1. 0. <= Z <= 1.
+         bord Lower Y = 0. 0. <= X <= 1. 0. <= Z <= 1.
+         bord Front Z = 0. 0. <= X <= 1. 0. <= Y <= 2.
+         bord Back Z = 1. 0. <= X <= 1. 0. <= Y <= 2.
+      }
+   }
+
+   discretiser_domaine my_domain
+   postraiter_domaine { domaine my_domain fichier file format lata }
+   End
 
 To use it, launch in a bash terminal:
 
 ::
 
-   # if not already done
+   # Initialize TRUST env if not already done
    > source $my_path_to_TRUST_installation/env_TRUST.sh
-   # then
+
+   # Run you data file
    > trust my_data_file
    > visit -o file.lata &
 
-| To see how to use VisIt, look at the first **TRUST** tutorial
-  exercise: `Flow around an obstacle <TRUST_tutorial.pdf#exo1>`__.
-| If you want to learn how to make a mesh with Salomé or Gmsh and read
-  it with **TRUST**, you can look at the exercises of the **TRUST**
-  tutorial: `here <TRUST_tutorial.pdf#salome>`__ for Salomé and
-  `here <TRUST_tutorial.pdf#gmsh>`__ for Gmsh.
+To see how to use VisIt, look at the first `TRUST Tutorial <https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_tutorial.pdf>`__ exercise; Flow around an Obstacle.
 
 Discretization
 --------------
 
-| You have to specify the discretization type which can be
-  `VDF <TRUST_Reference_Manual.pdf#vdf>`__,
-  `EF <TRUST_Reference_Manual.pdf#ef>`__ or
-  `VEFPreP1B <TRUST_Reference_Manual.pdf#vefprep1b>`__.
-| In **VDF** discretization, the locations of the unknowns are drawn in
-  the Figure `[fig_VDF] <#fig_VDF>`__.
+You have to specify a discretization type to run a simulation. See the `Discretizations <https://cea-trust-platform.github.io/classes/discretizations>`__ section on the TRUST's website.
 
-.. container:: center
+.. https://cea-trust-platform.github.io/classes/discretizations
 
-| For **VEFPreP1B**, the locations of the unknowns are drawn in the
-  Figure `[fig_VEF] <#fig_VEF>`__.
-
-.. container:: center
-
-In 3D for the pressure, we can also use the P0+P1+Pa discretization for
-flow with a strong source term and a low velocity field. In this case
-P0+P1 pressure gradient has trouble to match the source term so we use
-P0+P1+Pa discretization (cf Figure
-`[fig_VEF_pressure_loc] <#fig_VEF_pressure_loc>`__).
-
-.. container:: center
-
-To specify the wanted discretization, you have to add the following
-block to your data file:
-
-.. container:: center
-
-You can add parameters to your discretization with the optional keyword
-`Read <TRUST_Reference_Manual.pdf#read>`__ (see `VEFPreP1B
-discretization <TRUST_Reference_Manual.pdf#vefprep1b>`__).
-
-On the `TrioCFD website <http://triocfd.cea.fr/>`__, you can find
-information about:
-
--  **VDF** discretization in the `PhD thesis of A.
-   Chatelain <http://triocfd.cea.fr/Documents/DOCS THESES/these_chatelain_2004.pdf>`__,
-
--  **VEFPreP1B** discretization (Crouzet-Raviart elements) in the `PhD
-   thesis of T.
-   Fortin <http://triocfd.cea.fr/Documents/DOCS THESES/these_fortin_2006.pdf>`__
-   and `PhD thesis of S.
-   Heib <http://triocfd.cea.fr/Documents/DOCS THESES/These_Heib_2003.pdf>`__.
-
-Time schemes
+Time Schemes
 ------------
 
-Now you can choose your time scheme to solve your problem. For this you
-must specify the time scheme type wanted and give it a name. then you
-have to specify its parameters by filling the associated **"Read"**
-block.
+Now you can choose your time scheme to solve your problem. For this you must specify the time scheme type wanted and give it a name. then you have to specify its parameters by filling the associated **Read** block.
 
-.. container:: center
+.. code-block:: bash
+
+   Scheme_type my_time_scheme
+   Read my_time_scheme { ... }
 
 Some available time schemes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+The time schemes available in the TRUST platform are summarized on the TRUST's website in the `Temporal schemes <https://cea-trust-platform.github.io/classes/temporal-schemes>`__ section.
+
+.. https://cea-trust-platform.github.io/classes/temporal-schemes
+
 Here are some available types of explicit schemes:
 
--  `Scheme_Euler_explicit <TRUST_Reference_Manual.pdf#eulerscheme>`__,
+-  **Scheme_Euler_explicit**
 
--  `Schema_Adams_Bashforth_order_2 <TRUST_Reference_Manual.pdf#schemaadamsbashforthorder2>`__,
+-  **Schema_Adams_Bashforth_order_2**
 
--  `Runge_Kutta_ordre_3 <TRUST_Reference_Manual.pdf#rungekuttaordre3>`__,
+-  **Runge_Kutta_ordre_3**
 
 And also some available types of implicit schemes:
 
--  `Scheme_Euler_implicit <TRUST_Reference_Manual.pdf#schemaeulerimplicite>`__,
+-  **Scheme_Euler_implicit**
 
--  `Schema_Adams_Moulton_order_3 <TRUST_Reference_Manual.pdf#schemaadamsmoultonorder3>`__.
+-  **Schema_Adams_Moulton_order_3**
 
-| For other schemes, see `this
-  section <TRUST_Reference_Manual.pdf#schematempsbase>`__ of the
-  Reference Manual.
-| **Note** that you can use semi-implicit schemes activating the
-  **diffusion_implicite** keyword in your explicit time scheme.
+.. note::
+
+   You can treat implicitly the diffusion/viscous operators in a TRUST calculation. For that, you should activate the **diffusion_implicite** keyword in your explicit time scheme.
 
 Calculation stopping condition
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You must specify at least one stopping condition for you simulation. It
-can be:
+You must specify at least one stopping condition for you simulation. It can be:
 
 -  the final time: **tmax**
 
@@ -305,49 +279,60 @@ can be:
 
 -  the convergency treshold: **seuil_statio**
 
-| **Note** that if the time step reaches the minimal time step
-  **dt_min**, **TRUST** will stop the calculation.
-| If you want to stop properly your running calculation (i.e. with all
-  saves), you may use the *my_data_file*.stop file (cf section
-  `5.2 <#stopfile>`__). When the simulation is running, you can see the
-  "**0**" value in that file.
-| To stop it, put a "**1**" instead of the "**0**", save the file and at
-  the next iteration the calculation will stop properly.
-| When you don’t change anything in that file, at the end of the
-  calculation, you can see that it is writen "**Finished correctly**".
+.. note::
 
-Medium/Type of fluide
+   If the time step reaches the minimal time step **dt_min**, **TRUST** will stop the calculation.
+
+If you want to stop properly your running calculation (i.e. with all saves), you may use the ``my_data_file.stop`` file. 
+
+When the simulation is running, you can see the **0** value in that file.
+
+To stop it, put a **1** instead of the **0**, save the file and at the next iteration the calculation will stop properly.
+
+When you don’t change anything in that file, at the end of the calculation, you can see that it is writen **Finished correctly**.
+
+Medium/Type of Fluide
 ---------------------
 
 To specify the medium or fluid, you must add the following block.
 
-.. container:: center
+.. code-block:: bash
 
-***Fluid_type*** can be one of the following:
+   Fluid_type { ... }
 
--  `Fluide_incompressible <TRUST_Reference_Manual.pdf#fluideincompressible>`__
+**Fluid_type** can be one of the following:
 
--  `Fluide_quasi_compressible <TRUST_Reference_Manual.pdf#fluidequasicompressible>`__
+-  **Fluide_incompressible**
 
--  Fluide_Weakly_Compressible
+-  **Fluide_Quasi_compressible**
 
--  `Solide <TRUST_Reference_Manual.pdf#solide>`__
+-  **Fluide_Weakly_Compressible**
 
--  for other types and more information see `Project Reference
-   Manual <TRUST_Reference_Manual.pdf#milieubase>`__.
+-  **Solide**
 
-| Since TRUST v1.9.1, the medium should be read in the begining of the
-  problem definition (before equations). If you want to solve a coupled
-  problem, each medium should be read in the corresponding problem.
+- **Constituant**
 
-Add gravity
+- **Milieu_Composite** (for Multi-Phase problems)
+
+
+For other types and more information see the `TRUST Reference Manual <https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf>`__.
+
+.. note::
+
+   Since TRUST v1.9.1, the medium should be read in the begining of the problem definition (before equations). 
+
+   If you want to solve a coupled problem, each medium should be read in the corresponding problem.
+
+Add Gravity
 -----------
 
-If needed, you can add a gravity term to your simulation. This is done
-by adding a uniform field, in the medium block since V1.9.1. For example
-in 2D:
+If needed, you can add a gravity term to your simulation. This is done by adding a uniform field, in the medium block since V1.9.1. 
 
-.. container:: center
+For example in 2D:
+
+.. code-block:: bash
+
+   Gravity Uniform_field 2 0 -9.81
 
 Objects association and discretization
 --------------------------------------
@@ -355,25 +340,30 @@ Objects association and discretization
 Association
 ~~~~~~~~~~~
 
-Until now, we have created some objects, now we must associate them
-together. For this, we must use the
-`Associate <TRUST_Reference_Manual.pdf#associate>`__ interpretor:
+Until now, we have created some objects, now we must associate them together. For this, we must use the **Associate** interpretor:
 
-.. container:: center
+.. code-block:: bash
 
-.. _discretization-1:
+   # Association between the different objects #
+   Associate my_problem my_domain
+   Associate my_problem my_time_scheme
+
 
 Discretization
 ~~~~~~~~~~~~~~
 
-Then you must discretize your domain using the
-`Discretize <TRUST_Reference_Manual.pdf#discretize>`__ interpretor:
+Then you must discretize your domain using the **Discretize** interpretor:
 
-.. container:: center
+.. code-block:: bash
+   
+   Discretize my_problem my_discretization
 
-| The problem *my_problem* is discretized according to the
-  *my_discretization* discretization.
-| IMPORTANT: A number of objects must be already associated (a domain,
-  time scheme, ...) prior to invoking the **Discretize** keyword.
-| **Note** that when the discretization step succeeds, the mesh is
-  validated by the code.
+The problem *my_problem* is discretized according to the *my_discretization* discretization.
+
+**IMPORTANT:** 
+
+   A number of objects must be already associated (a domain, time scheme, ...) prior to invoking the **Discretize** keyword.
+
+.. note::
+
+   When the discretization step succeeds, the mesh is validated by the code.
