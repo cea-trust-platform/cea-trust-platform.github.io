@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>Problem definition &#8212; TRUST Generic Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/material.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="End of the data file" href="end_data.html" />
+    <link rel="prev" title="Data setting" href="data.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=blue-grey data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#srcs/pb" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="TRUST Generic Guide  documentation"
+           class="md-header-nav__button md-logo">
+          
+            &nbsp;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">TRUST Generic Guide  documentation</span>
+          <span class="md-header-nav__topic"> Problem definition </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="get" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder="Search"
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">TRUST Generic Guide  documentation</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="TRUST Generic Guide documentation" class="md-nav__button md-logo">
+      
+        <img src="../_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../index.html"
+       title="TRUST Generic Guide documentation">TRUST Generic Guide  documentation</a>
+  </label>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#srcs-pb--page-root" class="md-nav__link">Problem definition</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#set-of-equations" class="md-nav__link">Set of Equations</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#incompressible-problems" class="md-nav__link">Incompressible problems</a>
+        </li>
+        <li class="md-nav__item"><a href="#quasi-compressible-problem" class="md-nav__link">Quasi-Compressible problem</a>
+        </li>
+        <li class="md-nav__item"><a href="#weakly-compressible-problem" class="md-nav__link">Weakly-Compressible problem</a>
+        </li>
+        <li class="md-nav__item"><a href="#conduction-problem" class="md-nav__link">Conduction problem</a>
+        </li>
+        <li class="md-nav__item"><a href="#coupled-problems" class="md-nav__link">Coupled problems</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#pressure-solvers" class="md-nav__link">Pressure Solvers</a>
+        </li>
+        <li class="md-nav__item"><a href="#convection" class="md-nav__link">Convection</a>
+        </li>
+        <li class="md-nav__item"><a href="#diffusion" class="md-nav__link">Diffusion</a>
+        </li>
+        <li class="md-nav__item"><a href="#initial-conditions" class="md-nav__link">Initial Conditions</a>
+        </li>
+        <li class="md-nav__item"><a href="#boundary-conditions" class="md-nav__link">Boundary Conditions</a>
+        </li>
+        <li class="md-nav__item"><a href="#source-terms" class="md-nav__link">Source Terms</a>
+        </li>
+        <li class="md-nav__item"><a href="#post-processings" class="md-nav__link">Post-Processings</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#field-names" class="md-nav__link">Field names</a>
+        </li>
+        <li class="md-nav__item"><a href="#post-processing-blocks" class="md-nav__link">Post-processing blocks</a>
+        </li>
+        <li class="md-nav__item"><a href="#post-process-location" class="md-nav__link">Post-process location</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/srcs/pb.rst.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section id="problem-definition">
+<h1 id="srcs-pb--page-root">Problem definition<a class="headerlink" href="#srcs-pb--page-root" title="Permalink to this heading">¶</a></h1>
+<section id="set-of-equations">
+<h2 id="set-of-equations">Set of Equations<a class="headerlink" href="#set-of-equations" title="Permalink to this heading">¶</a></h2>
+<p>Depending on your choosed problem type, you will have a different set of equations.</p>
+<p>Here is a summary of some selected problems. For documentation and for complete problem sets, see the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf">TRUST Reference Manual</a>.</p>
+<section id="incompressible-problems">
+<h3 id="incompressible-problems">Incompressible problems<a class="headerlink" href="#incompressible-problems" title="Permalink to this heading">¶</a></h3>
+<p><strong>TRUST</strong> solves Navier-Stokes equations with/without the heat equation for an incompressible fluid:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left\{
+\begin{array}{c}
+\nabla \cdot \vec u =0 \\
+\displaystyle{\frac{\partial \vec u }{\partial t} + \textcolor{red}{\nabla \cdot (\vec u \otimes \vec u)} = \textcolor{blue}{\nabla \cdot (\nu \nabla \vec u)} - \nabla P^* } \\
+\displaystyle{\frac{\partial T}{\partial t} + \textcolor{red}{\vec u \nabla T} = \textcolor{blue}{\nabla \cdot (\alpha \nabla T)} + \frac{Q}{\rho C_p}}
+\end{array}
+\right.\end{split}\]</div>
+<p>where: <span class="math notranslate nohighlight">\(\displaystyle{P^*=\frac{P}{\rho} + g z}\)</span>, <span class="math notranslate nohighlight">\(Q\)</span> is the
+heat source term, and:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\rho\)</span>: density,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu\)</span>: dynamic viscosity,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\displaystyle{\nu=\frac{\mu}{\rho}}\)</span>: kinematic viscosity,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec g=g z\)</span>: gravity vector in cartesian coordinates,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\displaystyle{\alpha=\frac{\lambda}{\rho C_p}}\)</span>: thermal
+diffusivity.</p></li>
+<li><p><span class="math notranslate nohighlight">\(C_p\)</span>: specific heat capacity at constant pressure,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda\)</span>: thermal conductivity,</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Red terms are convective terms and blue terms are diffusive terms.</p>
+</div>
+<p>In your data file, you will have:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Pb_Thermohydraulique_Concentration_Turbulent<span class="w"> </span>my_problem
+...
+Read<span class="w"> </span>my_problem
+<span class="o">{</span>
+<span class="w">   </span><span class="c1"># Define medium and its properties + gravity if any #</span>
+<span class="w">   </span>Fluide_incompressible<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+
+<span class="w">   </span><span class="c1"># Navier Stokes equations #</span>
+<span class="w">   </span>Navier_Stokes_Standard
+<span class="w">   </span><span class="o">{</span>
+<span class="w">      </span>Solveur_Pression<span class="w"> </span>my_solver<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Diffusion<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Convection<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Initial_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Boundary_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Sources<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>...
+<span class="w">   </span><span class="o">}</span>
+
+<span class="w">   </span><span class="c1"># Energy equation #</span>
+<span class="w">   </span>Convection_Diffusion_Temperature
+<span class="w">   </span><span class="o">{</span>
+<span class="w">      </span>Diffusion<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Convection<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Initial_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Boundary_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Sources<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>...
+<span class="w">   </span><span class="o">}</span>
+
+<span class="w">   </span><span class="c1"># Constituent transportation equations #</span>
+<span class="w">   </span>Convection_Diffusion_Concentration
+<span class="w">   </span><span class="o">{</span>
+<span class="w">      </span>Diffusion<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Convection<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Initial_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Boundary_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Sources<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>...
+<span class="w">   </span><span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</section>
+<section id="quasi-compressible-problem">
+<h3 id="quasi-compressible-problem">Quasi-Compressible problem<a class="headerlink" href="#quasi-compressible-problem" title="Permalink to this heading">¶</a></h3>
+<p><strong>TRUST</strong> solves Navier-Stokes equations with/without heat equation for quasi-compressible fluid:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left\{
+\begin{array}{c}
+\displaystyle{\frac{\partial \rho }{\partial t} + \nabla \cdot (\rho \vec u) =0 }\\
+\displaystyle{ \frac{\partial \rho \vec u}{\partial t} + \textcolor{red}{\nabla \cdot (\rho \vec u \vec u)} =  \textcolor{blue}{\nabla \cdot \left(\mu \nabla \vec u \right)} - \nabla P -\rho \vec g }\\
+\displaystyle{ \rho C_p \left( \frac{\partial T}{\partial t} + \textcolor{red}{\vec u \nabla T} \right) = \textcolor{blue}{\nabla \cdot \left(\lambda \nabla T\right)} + \frac{dP_0}{dt} + Q }
+\end{array}
+\right.\end{split}\]</div>
+<p>where: <span class="math notranslate nohighlight">\(P_0=\rho R T\)</span>, <span class="math notranslate nohighlight">\(Q\)</span> is a heat source term, and:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\rho\)</span>: density,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu\)</span>: dynamic viscosity,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec g=g z\)</span>: gravity vector in cartesian coordinates,</p></li>
+<li><p><span class="math notranslate nohighlight">\(C_p\)</span>: specific heat capacity at constant pressure,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda\)</span>: thermal conductivity.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Red terms are convective terms and blue terms are diffusive terms.</p>
+</div>
+<p>In your data file, you will have:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Pb_Thermohydraulique_QC<span class="w"> </span>my_problem
+...
+Read<span class="w"> </span>my_problem
+<span class="o">{</span>
+<span class="w">   </span><span class="c1"># Define medium and its properties + gravity if any #</span>
+<span class="w">   </span>Fluide_Quasi_compressible<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+
+<span class="w">   </span><span class="c1"># Navier Stokes equations for quasi-compressible fluid under low Mach numbers #</span>
+<span class="w">   </span>Navier_Stokes_Turbulent_QC
+<span class="w">   </span><span class="o">{</span>
+<span class="w">      </span>Solveur_Pression<span class="w"> </span>my_solver<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Diffusion<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Convection<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Initial_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Boundary_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Sources<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>...
+<span class="w">   </span><span class="o">}</span>
+
+<span class="w">   </span><span class="c1"># Energy equation for quasi-compressible fluid under low Mach numbers #</span>
+<span class="w">   </span>Convection_Diffusion_Chaleur_QC
+<span class="w">   </span><span class="o">{</span>
+<span class="w">      </span>Diffusion<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Convection<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Initial_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Boundary_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Sources<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>...
+<span class="w">   </span><span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</section>
+<section id="weakly-compressible-problem">
+<h3 id="weakly-compressible-problem">Weakly-Compressible problem<a class="headerlink" href="#weakly-compressible-problem" title="Permalink to this heading">¶</a></h3>
+<p><strong>TRUST</strong> solves Navier-Stokes equations with/without heat equation for weakly-compressible fluid:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left\{
+\begin{array}{c}
+\displaystyle{\frac{\partial \rho }{\partial t} + \nabla \cdot (\rho \vec u) =0 }\\
+\displaystyle{ \frac{\partial \rho \vec u}{\partial t} + \textcolor{red}{\nabla \cdot (\rho \vec u \vec u)} =  \textcolor{blue}{\nabla \cdot \left(\mu \nabla \vec u \right)} - \nabla P -\rho \vec g }\\
+\displaystyle{ \rho C_p \left( \frac{\partial T}{\partial t} + \textcolor{red}{\vec u \nabla T} \right) = \textcolor{blue}{\nabla \cdot \left(\lambda \nabla T\right)} + \frac{dP_{tot}}{dt} + Q }
+\end{array}
+\right.\end{split}\]</div>
+<p>where: <span class="math notranslate nohighlight">\(P_{tot}=\rho R T\)</span>, <span class="math notranslate nohighlight">\(Q\)</span> is a heat source term, and:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\rho\)</span>: density,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu\)</span>: dynamic viscosity,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec g=g z\)</span>: gravity vector in cartesian coordinates,</p></li>
+<li><p><span class="math notranslate nohighlight">\(C_p\)</span>: specific heat capacity at constant pressure,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda\)</span>: thermal conductivity.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Red terms are convective terms and blue terms are diffusive terms.</p>
+</div>
+<p>In your data file, you will have:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Pb_Thermohydraulique_WC<span class="w"> </span>my_problem
+...
+Read<span class="w"> </span>my_problem
+<span class="o">{</span>
+<span class="w">   </span><span class="c1"># Define medium and its properties + gravity if any #</span>
+<span class="w">   </span>Fluide_Weakly_compressible<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+
+<span class="w">   </span><span class="c1"># Navier Stokes equations for weakly-compressible fluid under low Mach numbers #</span>
+<span class="w">   </span>Navier_Stokes_Turbulent_WC
+<span class="w">   </span><span class="o">{</span>
+<span class="w">      </span>Solveur_Pression<span class="w"> </span>my_solver<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Diffusion<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Convection<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Initial_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Boundary_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Sources<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>...
+<span class="w">   </span><span class="o">}</span>
+
+<span class="w">   </span><span class="c1"># Energy equation for weakly-compressible fluid under low Mach numbers #</span>
+<span class="w">   </span>Convection_Diffusion_Chaleur_WC
+<span class="w">   </span><span class="o">{</span>
+<span class="w">      </span>Diffusion<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Convection<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Initial_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Boundary_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Sources<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>...
+<span class="w">   </span><span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</section>
+<section id="conduction-problem">
+<h3 id="conduction-problem">Conduction problem<a class="headerlink" href="#conduction-problem" title="Permalink to this heading">¶</a></h3>
+<p>For this kind of problems, <strong>TRUST</strong> solves the heat equation:</p>
+<div class="math notranslate nohighlight">
+\[\rho C_p \frac{\partial T}{\partial t} = \textcolor{blue}{\nabla \cdot \left(\lambda \nabla T\right)} + Q\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\rho\)</span>: density,</p></li>
+<li><p><span class="math notranslate nohighlight">\(C_p\)</span>: specific heat capacity at constant pressure,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda\)</span>: thermal conductivity,</p></li>
+<li><p><span class="math notranslate nohighlight">\(Q\)</span> is a heat source term.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The term in blue is the diffusive term.</p>
+</div>
+<p>In your data file, you will have:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Pb_Conduction<span class="w"> </span>my_problem
+...
+Read<span class="w"> </span>my_problem
+<span class="o">{</span>
+<span class="w">   </span><span class="c1"># Define medium and its properties #</span>
+<span class="w">   </span>Solide<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+
+<span class="w">   </span><span class="c1"># Resolution of the heat equation #</span>
+<span class="w">   </span>Conduction
+<span class="w">   </span><span class="o">{</span>
+<span class="w">      </span>Diffusion<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Convection<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Initial_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Boundary_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>Sources<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">      </span>...
+<span class="w">   </span><span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</section>
+<section id="coupled-problems">
+<h3 id="coupled-problems">Coupled problems<a class="headerlink" href="#coupled-problems" title="Permalink to this heading">¶</a></h3>
+<p>With <strong>TRUST</strong>, we can couple problems. We will explain here the method for two problems but you can couple as many problems as you want.</p>
+<p>To couple two problems, we define two problems <em>my_problem_1</em> and <em>my_problem_2</em> each one associated to a separate domain <em>my_domain_1</em> and <em>my_domain_2</em>, and to a separate medium <em>my_medium_1</em> and <em>my_medium_2</em> (associated or not to the gravity).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Dimension<span class="w"> </span><span class="m">2</span>
+Pb_ThermoHydraulique<span class="w"> </span>my_problem_1
+Pb_ThermoHydraulique<span class="w"> </span>my_problem_2
+
+Domaine<span class="w"> </span>my_domain_1
+Read_file<span class="w"> </span>my_mesh_1.geo<span class="w"> </span><span class="p">;</span>
+
+Domaine<span class="w"> </span>my_domain_2
+Read_file<span class="w"> </span>my_mesh_2.geo<span class="w"> </span><span class="p">;</span>
+
+Associate<span class="w"> </span>my_problem_1<span class="w"> </span>my_domain_1
+Associate<span class="w"> </span>my_problem_2<span class="w"> </span>my_domain_2
+</pre></div>
+</div>
+<p>Then we define a coupled problem associated to a single time scheme like for example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Probleme_Couple<span class="w"> </span>my_coupled_problem
+
+VEFPreP1B<span class="w"> </span>my_discretization
+
+Scheme_euler_explicit<span class="w"> </span>my_scheme
+Read<span class="w"> </span>my_scheme<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+
+Associate<span class="w"> </span>my_coupled_problem<span class="w"> </span>my_problem_1
+Associate<span class="w"> </span>my_coupled_problem<span class="w"> </span>my_problem_2
+Associate<span class="w"> </span>my_coupled_problem<span class="w"> </span>my_scheme
+</pre></div>
+</div>
+<p>Then we discretize and solve everything:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Discretize<span class="w"> </span>my_coupled_problem<span class="w"> </span>my_discretization
+
+Read<span class="w"> </span>my_problem_1
+<span class="o">{</span>
+<span class="w">   </span>Fluide_Incompressible<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">   </span>...
+<span class="o">}</span>
+
+Read<span class="w"> </span>my_problem_2
+<span class="o">{</span>
+<span class="w">   </span>Fluide_Incompressible<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">   </span>...
+<span class="o">}</span>
+
+Solve<span class="w"> </span>my_coupled_problem
+End
+</pre></div>
+</div>
+<p>You can see the documentation of this kind of problem in the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf">TRUST Reference Manual</a>.</p>
+</section>
+</section>
+<section id="pressure-solvers">
+<h2 id="pressure-solvers">Pressure Solvers<a class="headerlink" href="#pressure-solvers" title="Permalink to this heading">¶</a></h2>
+<p>Then you may indicate the choice of pressure solver using the following syntax (see the <a class="reference external" href="https://cea-trust-platform.github.io/classes/solvers">Solvers</a> section on the TRUST’s website)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Solveur_pression<span class="w"> </span>my_solver<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+</pre></div>
+</div>
+<p>The <em>my_solver</em> may be:</p>
+<ul class="simple">
+<li><p><strong>GCP</strong></p></li>
+<li><p><strong>PETSc PETSc_solver_name</strong></p></li>
+<li><p><strong>Cholesky</strong></p></li>
+<li><p><strong>Gmres</strong></p></li>
+<li><p><strong>Gen</strong></p></li>
+</ul>
+<p>Reminder: in CFD, a separate solver is used to solve the pressure. For more details, you can have a look at the section <strong>Time and space schemes</strong> of the <strong>TRUST</strong>&amp; <strong>TrioCFD</strong> user slides.</p>
+</section>
+<section id="convection">
+<h2 id="convection">Convection<a class="headerlink" href="#convection" title="Permalink to this heading">¶</a></h2>
+<p>There is no default convective scheme so you must choose a specific scheme and specify as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>convection<span class="w"> </span><span class="o">{</span><span class="w"> </span>convective_scheme<span class="w"> </span><span class="o">}</span>
+</pre></div>
+</div>
+<p>Have a look at the <a class="reference external" href="https://cea-trust-platform.github.io/classes/spatial-schemes">Spatial Schemes</a> section for a list of schemes available in the TRUST platform.</p>
+<p>In short, you can use the following convective scheme, following the recommendations of the user training session (see section <strong>Time and space schemes</strong> of the <strong>TRUST</strong>&amp; <strong>TrioCFD</strong> user slides and the section <strong>Recommendations for schemes</strong>) following your discretization type:</p>
+<ul class="simple">
+<li><p><strong>Amont</strong></p></li>
+<li><p><strong>Muscl</strong></p></li>
+<li><p><strong>EF_stab</strong></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is no default convective scheme and if you don’t want convection in your problem, you may use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>convection<span class="w"> </span><span class="o">{</span><span class="w"> </span>negligeable<span class="w"> </span><span class="o">}</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="diffusion">
+<h2 id="diffusion">Diffusion<a class="headerlink" href="#diffusion" title="Permalink to this heading">¶</a></h2>
+<p>The diffusion term is more or less a Laplacien operator and is thus always discretized by a second order centered difference scheme. So you just need to do this:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>diffusion<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you don’t want diffusion in your problem, you may use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>diffusion<span class="w"> </span><span class="o">{</span><span class="w"> </span>negligeable<span class="w"> </span><span class="o">}</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="initial-conditions">
+<h2 id="initial-conditions">Initial Conditions<a class="headerlink" href="#initial-conditions" title="Permalink to this heading">¶</a></h2>
+<p>For each equation, you <strong>must</strong> set initial conditions:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>initial_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+</pre></div>
+</div>
+<p>See the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf">TRUST Reference Manual</a> to see the syntax of each available initial condition. Here are the most used initial conditions:</p>
+<ul class="simple">
+<li><p><strong>Vitesse</strong> field_type <em>bloc_lecture_champ</em></p></li>
+<li><p><strong>Temperature</strong> field_type <em>bloc_lecture_champ</em></p></li>
+</ul>
+<p>We list here some “field_type”:</p>
+<ul class="simple">
+<li><p><strong>Uniform_Field</strong> for a uniform field,</p></li>
+<li><p><strong>Champ_Fonc_Med</strong> to read a data field in a MED-format file .med at a specified time,</p></li>
+<li><p><strong>Champ_Fonc_txyz</strong> for a field which depends on time and space,</p></li>
+<li><p><strong>Champ_Fonc_Fonction_txyz</strong> for a field which is a function of another field and time and/or space coordinates,</p></li>
+<li><p><strong>Champ_Fonc_Reprise</strong> to read a data field in a saved file (.xyz or .sauv) at a specified time.</p></li>
+</ul>
+</section>
+<section id="boundary-conditions">
+<h2 id="boundary-conditions">Boundary Conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this heading">¶</a></h2>
+<p>Then you may specify your boundary conditions like:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>boundary_conditions<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+</pre></div>
+</div>
+<p>It is important to specify here that <strong>TRUST will not accept any boundary conditions by default.</strong></p>
+<p>You can find help for boundary conditions in the <a class="reference external" href="https://cea-trust-platform.github.io/classes/boundary-conditions">Boundary Conditions</a> section on the TRUST’s website.</p>
+<p>Here is a list of the most used boundary conditions:</p>
+<ul class="simple">
+<li><p>Bord <strong>Frontiere_ouverte_vitesse_imposee</strong> boundary_field_type <em>bloc_lecture_champ</em></p></li>
+<li><p>Bord <strong>Frontiere_ouverte_pression_imposee</strong> boundary_field_type <em>bloc_lecture_champ</em></p></li>
+<li><p>Bord <strong>Paroi_fixe</strong></p></li>
+<li><p>Bord <strong>Symetrie</strong></p></li>
+<li><p>Bord <strong>Periodique</strong></p></li>
+<li><p>Bord <strong>Frontiere_ouverte_temperature_imposee</strong> boundary_field_type <em>bloc_lecture_champ</em></p></li>
+<li><p>Bord <strong>Frontiere_ouverte T_ext</strong> boundary_field_type <em>bloc_lecture_champ</em></p></li>
+<li><p>Bord <strong>Paroi_adiabatique</strong></p></li>
+<li><p>Bord <strong>Paroi_flux_impose</strong> boundary_field_type <em>bloc_lecture_champ</em></p></li>
+</ul>
+<p>To choose your <em>boundary_field_type</em> parameters, refer to the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf">TRUST Reference Manual</a>.</p>
+</section>
+<section id="source-terms">
+<h2 id="source-terms">Source Terms<a class="headerlink" href="#source-terms" title="Permalink to this heading">¶</a></h2>
+<p>To introduce a source term into an equation, add the following line into the block defining the equation. The list of source keyword is described below.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Sources<span class="w"> </span><span class="o">{</span><span class="w"> </span>source_keyword<span class="w"> </span><span class="o">}</span>
+</pre></div>
+</div>
+<p>To introduce several source terms into the same equation, the blocks corresponding to the various terms need to be separated by a comma:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Sources<span class="w"> </span><span class="o">{</span><span class="w"> </span>source_keyword1<span class="w"> </span>,<span class="w"> </span>source_keyword2<span class="w"> </span>,<span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+</pre></div>
+</div>
+<p>Here are some available source terms. For a complete list, refer to the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf">TRUST Reference Manual</a>.</p>
+<ul>
+<li><p><strong>Perte_Charge_Reguliere</strong> type_perte_charge bloc_definition_pertes_charges</p></li>
+<li><p><strong>Perte_Charge_Singuliere</strong> <strong>KX | KY | KZ</strong> coefficient_value { … }</p></li>
+<li><p><strong>Canal_perio</strong> { … }</p></li>
+<li><p><strong>Boussinesq_temperature</strong> { … }</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Defined as <span class="math notranslate nohighlight">\(\rho(T)=\rho(T_0)(1-\beta_{th}(T-T_0))\)</span></p>
+</div>
+</li>
+<li><p><strong>Boussinesq_concentration</strong> { … }</p></li>
+<li><p><strong>Puissance_thermique</strong> field_type bloc_lecture_champ</p></li>
+</ul>
+</section>
+<section id="post-processings">
+<h2 id="post-processings">Post-Processings<a class="headerlink" href="#post-processings" title="Permalink to this heading">¶</a></h2>
+<p>Before post-processing fields, during a run, <strong>TRUST</strong> creates several files which contain information about the calculation, the convergence, fluxes, balances… See section <a class="reference internal" href="post_process.html#output-files"><span class="std std-ref">Output Files</span></a> for more information.</p>
+<p>Several keywords can be used to create a post-processing block, into a problem. First, you can create a single post-processing task (<strong>Post_processing</strong> keyword). Generally, in this block, results will be printed with a specified format at a specified time period.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Post_processing
+<span class="o">{</span>
+<span class="w">   </span>Postraitement_definition
+<span class="w">   </span>...
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>But you can also create a list of post-processings with <strong>Post_processings</strong> keyword (named with Post_name1, Post_name2, etc…), in order to print results into several formats or with different time periods, or into different results files:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Post_processings
+<span class="o">{</span>
+<span class="w">   </span>Post_name1<span class="w"> </span><span class="o">{</span><span class="w"> </span>Postraitement_definition<span class="w"> </span><span class="o">}</span>
+<span class="w">   </span>Post_name2<span class="w"> </span><span class="o">{</span><span class="w"> </span>Postraitement_definition<span class="w"> </span><span class="o">}</span>
+<span class="w">   </span>...
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Have a look at the <a class="reference external" href="https://cea-trust-platform.github.io/classes/post-processing">Post-Processing</a> section on the TRUST’s website.</p>
+<section id="field-names">
+<h3 id="field-names">Field names<a class="headerlink" href="#field-names" title="Permalink to this heading">¶</a></h3>
+<ul>
+<li><p><strong>Existing &amp; predefined fields</strong></p>
+<p>You can post-process predefined fields and already existing fields. Here is a list of post-processable fields, but it is not the only ones.</p>
+<table>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Physical values</strong></p></td>
+<td><p><strong>Keyword for field_name</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Velocity</p></td>
+<td><p>Vitesse or Velocity</p></td>
+<td><p>m.s−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Velocity residual</p></td>
+<td><p>Vitesse_residu</p></td>
+<td><p>m.s−2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kinetic energy per elements</p></td>
+<td><p>Energie_cinetique_elem</p></td>
+<td><p>kg.m−1.s−2</p></td>
+</tr>
+<tr class="row-even"><td><p>Total kinetic energy</p></td>
+<td><p>Energie_cinetique_totale</p></td>
+<td><p>kg.m−1.s−2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vorticity</p></td>
+<td><p>Vorticite</p></td>
+<td><p>s−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Pressure in incompressible flow (P/ρ + gz)</p></td>
+<td><p>Pression</p></td>
+<td><p>Pa.m3.kg−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pressure in incompressible flow (P+ρgz)</p></td>
+<td><p>Pression_pa or Pressure</p></td>
+<td><p>Pa</p></td>
+</tr>
+<tr class="row-even"><td><p>Pressure in compressible flow</p></td>
+<td><p>Pression</p></td>
+<td><p>Pa</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hydrostatic pressure (ρgz)</p></td>
+<td><p>Pression_hydrostatique</p></td>
+<td><p>Pa</p></td>
+</tr>
+<tr class="row-even"><td><p>Totale pressure</p></td>
+<td><p>Pression_tot</p></td>
+<td><p>Pa</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pressure gradient</p></td>
+<td><p>Gradient_pression</p></td>
+<td><p>m.s−2</p></td>
+</tr>
+<tr class="row-even"><td><p>Velocity gradient</p></td>
+<td><p>gradient_vitesse</p></td>
+<td><p>s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Temperature</p></td>
+<td><p>Temperature</p></td>
+<td><p>C or K</p></td>
+</tr>
+<tr class="row-even"><td><p>Temperature residual</p></td>
+<td><p>Temperature_residu</p></td>
+<td><p>C.s−1 or K.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Temperature variance</p></td>
+<td><p>Variance_Temperature</p></td>
+<td><p>K2</p></td>
+</tr>
+<tr class="row-even"><td><p>Temperature dissipation rate</p></td>
+<td><p>Taux_Dissipation_Temperature</p></td>
+<td><p>K2.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Temperature gradient</p></td>
+<td><p>Gradient_temperature</p></td>
+<td><p>K.m−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Heat exchange coefficient</p></td>
+<td><p>H_echange_Tref</p></td>
+<td><p>W.m−2.K−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Turbulent viscosity</p></td>
+<td><p>Viscosite_turbulente</p></td>
+<td><p>m2.s−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Turbulent dynamic viscosity</p></td>
+<td><p>Viscosite_dynamique_turbulente</p></td>
+<td><p>kg.m.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Turbulent kinetic</p></td>
+<td><p>Energy</p></td>
+<td><p>K m2.s−2</p></td>
+</tr>
+<tr class="row-even"><td><p>Turbulent dissipation rate</p></td>
+<td><p>Eps</p></td>
+<td><p>m3.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Constituent concentration</p></td>
+<td><p>Concentration</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Constituent concentration residual</p></td>
+<td><p>Concentration_residu</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Component velocity along X</p></td>
+<td><p>VitesseX</p></td>
+<td><p>m.s−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Component velocity along Y</p></td>
+<td><p>VitesseY</p></td>
+<td><p>m.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Component velocity along Z</p></td>
+<td><p>VitesseZ</p></td>
+<td><p>m.s−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Mass balance on each cell</p></td>
+<td><p>Divergence_U</p></td>
+<td><p>m3.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Irradiancy</p></td>
+<td><p>Irradiance</p></td>
+<td><p>W.m−2</p></td>
+</tr>
+<tr class="row-even"><td><p>Q-criteria</p></td>
+<td><p>Critere_Q</p></td>
+<td><p>s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Distance to the wall Y +</p></td>
+<td><p>Y_plus</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Friction velocity</p></td>
+<td><p>U_star</p></td>
+<td><p>m.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Void fraction</p></td>
+<td><p>Alpha</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Cell volumes</p></td>
+<td><p>Volume_maille</p></td>
+<td><p>m3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Source term in non Galinean referential</p></td>
+<td><p>Acceleration_terme_source</p></td>
+<td><p>m.s−2</p></td>
+</tr>
+<tr class="row-even"><td><p>Stability time steps</p></td>
+<td><p>Pas_de_temps</p></td>
+<td><p>s</p></td>
+</tr>
+<tr class="row-odd"><td><p>Volumetric porosity</p></td>
+<td><p>Porosite_volumique</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Distance to the wall</p></td>
+<td><p>Distance_Paroi</p></td>
+<td><p>m</p></td>
+</tr>
+<tr class="row-odd"><td><p>Volumic thermal power</p></td>
+<td><p>Puissance_volumique</p></td>
+<td><p>W.m−3</p></td>
+</tr>
+<tr class="row-even"><td><p>Local shear strain rate</p></td>
+<td><p>Taux_cisaillement</p></td>
+<td><p>s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cell Courant number (VDF only)</p></td>
+<td><p>Courant_maille</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Cell Reynolds number (VDF only)</p></td>
+<td><p>Reynolds_maille</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Viscous force</p></td>
+<td><p>Viscous_force</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Pressure force</p></td>
+<td><p>Pressure_force</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Total force</p></td>
+<td><p>Total_force</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Viscous force along X</p></td>
+<td><p>Viscous_force_x</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Viscous force along Y</p></td>
+<td><p>Viscous_force_y</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Viscous force along Z</p></td>
+<td><p>Viscous_force_z</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pressure force along X</p></td>
+<td><p>Pressure_force_x</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Pressure force along Y</p></td>
+<td><p>Pressure_force_y</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pressure force along Z</p></td>
+<td><p>Pressure_force_z</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Total force along X</p></td>
+<td><p>Total_force_x</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Total force along Y</p></td>
+<td><p>Total_force_y</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+<tr class="row-even"><td><p>Total force along Z</p></td>
+<td><p>Total_force_z</p></td>
+<td><p>kg.m2.s−1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Physical properties (conductivity, diffusivity,…) can also be post-processed.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The name of the fields and components available for post-processing is displayed in the error file after the following message: “Reading of fields to be postprocessed”. Of course, this list depends of the problem being solved.</p>
+</div>
+</li>
+<li><p><strong>Creating new fields</strong></p>
+<p>The <strong>Definition_champs</strong> keyword is used to create new or more complex fields for advanced post-processing.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Definition_champs<span class="w"> </span><span class="o">{</span><span class="w"> </span>field_name_post<span class="w"> </span>field_type<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span><span class="w"> </span><span class="o">}</span>
+</pre></div>
+</div>
+<p><em>field_name_post</em> is the name of the new created field and <strong>field_type</strong> is one of the following possible type:</p>
+<ul class="simple">
+<li><p><strong>refChamp</strong></p></li>
+<li><p><strong>Reduction_0D</strong> using for example the <strong>min</strong>, <strong>max</strong> or <strong>somme</strong> methods.</p></li>
+<li><p><strong>Transformation</strong></p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p>Refer to the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf">TRUST Reference Manual</a> for more information.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can combine several <strong>field_type</strong> keywords to create your field and then use your new fields to create other ones.</p>
+</div>
+<p>Here is an example of new field named <em>max_temperature</em>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Read<span class="w"> </span>my_problem
+<span class="o">{</span>
+<span class="w">   </span>...
+<span class="w">   </span>Postraitement
+<span class="w">   </span><span class="o">{</span>
+<span class="w">      </span>Definition_champs
+<span class="w">      </span><span class="o">{</span>
+<span class="w">         </span><span class="c1"># Creation of a 0D field: maximal temperature of the domain #</span>
+<span class="w">         </span>max_temperature<span class="w"> </span>Reduction_0D
+<span class="w">         </span><span class="o">{</span>
+<span class="w">            </span>methode<span class="w"> </span>max
+<span class="w">            </span><span class="nb">source</span><span class="w"> </span>refChamp<span class="w"> </span><span class="o">{</span><span class="w"> </span>Pb_champ<span class="w"> </span>my_problem<span class="w"> </span>temperature<span class="w"> </span><span class="o">}</span>
+<span class="w">         </span><span class="o">}</span>
+<span class="w">      </span><span class="o">}</span>
+
+<span class="w">      </span>Probes
+<span class="w">      </span><span class="o">{</span>
+<span class="w">         </span><span class="c1"># Print max(temperature) into the datafile_TMAX.son file #</span>
+<span class="w">         </span>tmax<span class="w"> </span>max_temperature<span class="w"> </span>periode<span class="w"> </span><span class="m">0</span>.01<span class="w"> </span>point<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">0</span>.<span class="w"> </span><span class="m">0</span>.
+<span class="w">      </span><span class="o">}</span>
+
+<span class="w">      </span>Champs<span class="w"> </span>dt_post<span class="w"> </span><span class="m">1</span>.0<span class="w"> </span><span class="o">{</span><span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">   </span><span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+<p>You can find other examples in the <strong>TRUST</strong>&amp; <strong>TrioCFD</strong> user slides in the section “Post processing description”.</p>
+</section>
+<section id="post-processing-blocks">
+<h3 id="post-processing-blocks">Post-processing blocks<a class="headerlink" href="#post-processing-blocks" title="Permalink to this heading">¶</a></h3>
+<p>There are three methods to post-process in <strong>TRUST</strong>: using probes, fields or making statistics.</p>
+<ul>
+<li><p><strong>Probes</strong></p>
+<p>Probes refer to sensors that allow a value or several points of the domain to be monitored over time. The probes are a set of points defined:</p>
+<ul>
+<li><p>one by one: <strong>Points</strong> keyword</p>
+<p>or</p>
+</li>
+<li><p>by a set of points evenly</p>
+<ul>
+<li><p>distributed over a straight segment: <strong>Segment</strong> keyword</p>
+<blockquote>
+<div><p>or</p>
+</div></blockquote>
+</li>
+<li><p>arranged according to a layout: <strong>Plan</strong> keyword</p>
+<p>or</p>
+</li>
+<li><p>arranged according to a parallelepiped <strong>Volume</strong> keyword.</p></li>
+</ul>
+</li>
+</ul>
+<p>Here is an example of 2D <strong>Probes</strong> block:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Probes
+<span class="o">{</span>
+<span class="w">   </span>pressure_probe<span class="w"> </span><span class="o">[</span>loc<span class="o">]</span><span class="w"> </span>pressure<span class="w"> </span>Periode<span class="w"> </span><span class="m">0</span>.5<span class="w"> </span>Points<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">1</span>.<span class="w"> </span><span class="m">0</span>.<span class="w"> </span><span class="m">1</span>.<span class="w"> </span><span class="m">1</span>.<span class="w"> </span><span class="m">1</span>.<span class="w"> </span><span class="m">2</span>.
+<span class="w">   </span>velocity_probe<span class="w"> </span><span class="o">[</span>loc<span class="o">]</span><span class="w"> </span>velocity<span class="w"> </span>Periode<span class="w"> </span><span class="m">0</span>.5<span class="w"> </span>Segment<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">1</span>.<span class="w"> </span><span class="m">0</span>.<span class="w"> </span><span class="m">1</span>.<span class="w"> </span><span class="m">4</span>.
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>where the use of <em>loc</em> option allow to specify the wanted location of the probes. The available values are <strong>grav</strong> for gravity center of the element, <strong>nodes</strong> for faces and <strong>som</strong> for vertices. There is not default location. If the point does not coincide with a alculation node, the value is extrapolated linearly according to neighbouring node values.</p>
+<p>For complete syntax, see the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf">TRUST Reference Manual</a>.</p>
+</li>
+<li><p><strong>Fields</strong></p>
+<p>This keyword allows to post-process fields on the whole domain, specifying the name of the backup file, its format, the post-processing time step and the name (and location) of the post-processed fields.</p>
+<p>Here is an example of <strong>Fields</strong> block:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Fichier<span class="w"> </span>results
+Format<span class="w"> </span>lata
+Fields<span class="w"> </span>dt_post<span class="w"> </span><span class="m">1</span>.
+<span class="o">{</span>
+<span class="w">   </span>velocity<span class="w"> </span><span class="o">[</span>faces<span class="o">]</span><span class="w"> </span><span class="o">[</span>som<span class="o">]</span><span class="w"> </span><span class="o">[</span>elem<span class="o">]</span>
+<span class="w">   </span>pressure<span class="w"> </span><span class="o">[</span>elem<span class="o">]</span><span class="w"> </span><span class="o">[</span>som<span class="o">]</span>
+<span class="w">   </span>temperature<span class="w"> </span><span class="o">[</span>elem<span class="o">]</span><span class="w"> </span><span class="o">[</span>som<span class="o">]</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>where <strong>faces</strong> , <strong>elem</strong> and <strong>som</strong> are keywords allowed to specify the location of the field.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you don’t specify the location of the field, the default value is <strong>som</strong> for values at the vertices. So fields are post-processed at the vertices of the mesh.</p>
+</div>
+<p>To visualize your post-processed fields, you can use open source softwares like:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://wci.llnl.gov/simulation/computer-codes/visit">VisIt</a> (included in <strong>TRUST</strong> package) or <a class="reference external" href="http://www.salome-platform.org">SALOME</a>.</p>
+</div></blockquote>
+</li>
+</ul>
+<blockquote>
+<div><p>For complete syntax, see the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf">TRUST Reference Manual</a>.</p>
+</div></blockquote>
+<ul>
+<li><p><strong>Statistics</strong></p>
+<p>Using this keyword, you will compute statistics on your unknows. You must specify the begining and ending time for the statistics, the post-processing time step, the statistic method, the name (and ocation) of your post-processed field.</p>
+<p>Here is an example of <strong>Statistiques</strong> block:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Statistiques<span class="w"> </span>dt_post<span class="w"> </span><span class="m">0</span>.1
+<span class="o">{</span>
+<span class="w">   </span>t_deb<span class="w"> </span><span class="m">1</span>.<span class="w"> </span>t_fin<span class="w"> </span><span class="m">5</span>.
+<span class="w">   </span>moyenne<span class="w"> </span>velocity<span class="w"> </span><span class="o">[</span>faces<span class="o">]</span><span class="w"> </span><span class="o">[</span>elem<span class="o">]</span><span class="w"> </span><span class="o">[</span>som<span class="o">]</span>
+<span class="w">   </span>ecart_type<span class="w"> </span>pressure<span class="w"> </span><span class="o">[</span>elem<span class="o">]</span><span class="w"> </span><span class="o">[</span>som<span class="o">]</span>
+<span class="w">   </span>correlation<span class="w"> </span>pressure<span class="w"> </span>velocity<span class="w"> </span><span class="o">[</span>elem<span class="o">]</span><span class="w"> </span><span class="o">[</span>som<span class="o">]</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>This block will write at every <strong>dt_post</strong> the average of the velocity <span class="math notranslate nohighlight">\(\overline{V(t)}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\overline{V(t)}=\left\{ \begin{array}{ll}
+0 &amp; ,\mbox{ for }t\leq t_{deb}\\
+\frac{1}{t-t_{deb}}{\displaystyle \int_{t_{deb}}^{t}V(t)dt} &amp; ,\mbox{ for }t_{deb}&lt;t\leq t_{fin}\\
+\frac{1}{t_{fin}-t_{deb}}{\displaystyle \int_{t_{deb}}^{t_{fin}}V(t)dt} &amp; ,\mbox{ for }t&gt;t_{fin}
+\end{array}\right.\end{split}\]</div>
+<p>the standard deviation of the pressure <span class="math notranslate nohighlight">\(\left\langle P(t)\right\rangle\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left\langle P(t)\right\rangle=\left\{ \begin{array}{ll}
+0 &amp; ,\mbox{ for }t\leq t_{deb}\\
+\frac{1}{t-t_{deb}}{\displaystyle \sqrt{\int_{t_{deb}}^{t}\left[P(t)-\overline{P(t)}\right]^{2}dt}} &amp; ,\mbox{ for }t_{deb}&lt;t\leq t_{fin}\\
+\frac{1}{t_{fin}-t_{deb}}{\displaystyle \sqrt{\int_{t_{deb}}^{t_{fin}}\left[P(t)-\overline{P(t)}\right]^{2}dt}} &amp; ,\mbox{ for }t&gt;t_{fin}
+\end{array}\right.\end{split}\]</div>
+<p>and correlation between the pressure and the velocity <span class="math notranslate nohighlight">\(\left\langle P(t).V(t)\right\rangle\)</span> like:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left\langle P(t).V(t)\right\rangle=\left\{ \begin{array}{ll}
+0 &amp; ,\mbox{ for }t\leq t_{deb}\\
+\frac{1}{t-t_{deb}}{\displaystyle \int_{t_{deb}}^{t}\left[P(t)-\overline{P(t)}\right]\cdot\left[V(t)-\overline{V(t)}\right]dt} &amp; ,\mbox{ for }t_{deb}&lt;t\leq t_{fin}\\
+\frac{1}{t_{fin}-t_{deb}}{\displaystyle \int_{t_{deb}}^{t_{fin}}\left[P(t)-\overline{P(t)}\right]\cdot\left[V(t)-\overline{V(t)}\right]dt} &amp; ,\mbox{ for }t&gt;t_{fin}
+\end{array}\right.\end{split}\]</div>
+<p><strong>Remark:</strong> Statistical fields can be plotted with probes with the keyword “operator_field_name” like for example: Moyenne_Vitesse or Ecart_Type_Pression or Correlation_Vitesse_Vitesse. For that, it is mandatory to have the statistical calculation of this fields defined with the keyword <strong>Statistiques</strong>.</p>
+<p>For complete syntax, see the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf">TRUST Reference Manual</a>.</p>
+</li>
+</ul>
+</section>
+<section id="post-process-location">
+<h3 id="post-process-location">Post-process location<a class="headerlink" href="#post-process-location" title="Permalink to this heading">¶</a></h3>
+<p>You can use location keywords to specify where you want to post-process your fields in order to avoid interpolations on your post-processed fields.</p>
+<p>For that, recall the variables localisation from the <a class="reference external" href="https://cea-trust-platform.github.io/classes/discretizations">Discretizations</a> section available the TRUST’s website.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are in P0+P1 discretization (default option) and you post-process the pressure field at the element (or at the vertices), you will have an <strong>interpolation</strong> because the field is computed at the element <strong>and</strong> at the vertices.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Non-main variables (like the viscosity, conductivity, cp, density, y+, … ) are always located at the element gravity center.</p>
+</div>
+</section>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="data.html" title="Data setting"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> Previous </span> Data setting </span>
+              </div>
+            </a>
+          
+          
+            <a href="end_data.html" title="End of the data file"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> Next </span> End of the data file </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright .
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.0.0.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>

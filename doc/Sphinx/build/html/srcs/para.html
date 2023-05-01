@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>Parallel Simulations &#8212; TRUST Generic Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/material.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Important references" href="refs.html" />
+    <link rel="prev" title="Post-processing" href="post_process.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=blue-grey data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#srcs/para" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="TRUST Generic Guide  documentation"
+           class="md-header-nav__button md-logo">
+          
+            &nbsp;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">TRUST Generic Guide  documentation</span>
+          <span class="md-header-nav__topic"> Parallel Simulations </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="get" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder="Search"
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">TRUST Generic Guide  documentation</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="TRUST Generic Guide documentation" class="md-nav__button md-logo">
+      
+        <img src="../_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../index.html"
+       title="TRUST Generic Guide documentation">TRUST Generic Guide  documentation</a>
+  </label>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#srcs-para--page-root" class="md-nav__link">Parallel Simulations</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#basic-notions" class="md-nav__link">Basic Notions</a>
+        </li>
+        <li class="md-nav__item"><a href="#performances" class="md-nav__link">Performances</a>
+        </li>
+        <li class="md-nav__item"><a href="#partitioning" class="md-nav__link">Partitioning</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#the-different-blocks" class="md-nav__link">The different blocks</a>
+        </li>
+        <li class="md-nav__item"><a href="#partitionning-assisted-method" class="md-nav__link">Partitionning: “Assisted” method</a>
+        </li>
+        <li class="md-nav__item"><a href="#trust-available-partitioning-tools" class="md-nav__link"><strong>TRUST</strong> available partitioning tools</a>
+        </li>
+        <li class="md-nav__item"><a href="#overlapping-width-value" class="md-nav__link">Overlapping width value</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#running-a-parallel-calculation" class="md-nav__link">Running a Parallel Calculation</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#on-a-pc" class="md-nav__link">On a PC</a>
+        </li>
+        <li class="md-nav__item"><a href="#on-a-cluster" class="md-nav__link">On a cluster</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#visualization" class="md-nav__link">Visualization</a>
+        </li>
+        <li class="md-nav__item"><a href="#useful-information" class="md-nav__link">Useful Information</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#modify-the-mesh" class="md-nav__link">Modify the mesh</a>
+        </li>
+        <li class="md-nav__item"><a href="#modify-calculation-parameters" class="md-nav__link">Modify calculation parameters</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/srcs/para.rst.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section id="parallel-simulations">
+<h1 id="srcs-para--page-root">Parallel Simulations<a class="headerlink" href="#srcs-para--page-root" title="Permalink to this heading">¶</a></h1>
+<p><strong>TRUST</strong> is a plateform which allows to make parallel calculation following some basic rules:</p>
+<ul class="simple">
+<li><p><strong>S</strong>ingle <strong>P</strong>rogram, <strong>M</strong>ultiple <strong>D</strong>ata model: tasks are split up and run simultaneously on multiple processors with different input in order to obtain results faster.</p></li>
+<li><p>messages exchange by <strong>M</strong>essage <strong>P</strong>assing <strong>I</strong>nterface.</p></li>
+<li><p>from a PC to a massively parallel computer, with shared or distributed memory.</p></li>
+</ul>
+<section id="basic-notions">
+<h2 id="basic-notions">Basic Notions<a class="headerlink" href="#basic-notions" title="Permalink to this heading">¶</a></h2>
+<p>To make a parallel calculation, you have to partition your domain. Each sub-domain will be treated by one processor. In order to have good performances, ensure you that:</p>
+<ul class="simple">
+<li><p>sub-domains have almost the same number of cells.</p></li>
+<li><p>joint lengths (boundaries between sub-domains) are minimal.</p></li>
+</ul>
+</section>
+<section id="performances">
+<h2 id="performances">Performances<a class="headerlink" href="#performances" title="Permalink to this heading">¶</a></h2>
+<p>You have to choose a number of processors which is in agreement with the number of cells. So, you can evaluate your speed-up (sequential time/parallel time which must be as close as possible of the number of processors) or efficiency (=1/SpeedUp) to choose the right number of processors.</p>
+<p>From our experience, for good performance with <strong>TRUST</strong>, each processor has to treat between 20000 and 30000 cells.</p>
+</section>
+<section id="partitioning">
+<h2 id="partitioning">Partitioning<a class="headerlink" href="#partitioning" title="Permalink to this heading">¶</a></h2>
+<p>To run a parallel calculation, you must:</p>
+<ul class="simple">
+<li><p>make some modifications on your <em>my_data_file.data</em> file,</p></li>
+<li><p>do two runs:</p>
+<ul>
+<li><p>the first one, to partitioning and create your ’n’ sub-domains (two methods will by presented).</p></li>
+<li><p>the second one, to read your ’n’ sub-domains and run the calculation on ’n’ processors.</p></li>
+</ul>
+</li>
+</ul>
+<section id="the-different-blocks">
+<span id="decjdd"></span><h3 id="the-different-blocks">The different blocks<a class="headerlink" href="#the-different-blocks" title="Permalink to this heading">¶</a></h3>
+<p>Different blocks appear in the data file.</p>
+<ul>
+<li><p><strong>Modifications on the mesh block</strong></p>
+<blockquote>
+<div><p>First you may add the tags <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">BEGIN</span> <span class="pre">MESH</span> <span class="pre">#</span></code> and <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">END</span> <span class="pre">MESH</span> <span class="pre">#</span></code> before and after your mesh block, for example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># BEGIN MESH #</span>
+Read_file<span class="w"> </span>my_mesh.geo<span class="w"> </span><span class="p">;</span>
+<span class="o">[</span>Trianguler_h<span class="w"> </span>my_domain<span class="w"> </span><span class="o">]</span>
+<span class="c1"># END MESH #</span>
+</pre></div>
+</div>
+<p>You can refer to section <a class="reference internal" href="data.html#mesh"><span class="std std-ref">Mesh</span></a> to have more information.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Adding a partitioning block</strong></p>
+<blockquote>
+<div><p>You may now add the partitioning block which contains the cutting instruction, after your mesh block:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># BEGIN PARTITION</span>
+Partition<span class="w"> </span>my_domain
+<span class="o">{</span>
+<span class="w">   </span>Partition_tool<span class="w"> </span>partitioner_name<span class="w"> </span><span class="o">{</span><span class="w"> </span>option1<span class="w"> </span>option2<span class="w"> </span>...<span class="w"> </span><span class="o">}</span>
+<span class="w">   </span>Larg_joint<span class="w"> </span><span class="m">2</span>
+<span class="w">   </span>zones_name<span class="w"> </span>DOM
+<span class="w">   </span>...
+<span class="o">}</span>
+End
+END<span class="w"> </span>PARTITION<span class="w"> </span><span class="c1">#</span>
+</pre></div>
+</div>
+<p>Where <em>partitioner_name</em> is the name of the chosen partitioner, one of <strong>METIS</strong>, <strong>Tranche</strong>, <strong>Sous_Zones</strong>, <strong>Partition</strong> or <strong>Fichier_Decoupage</strong> (see section <a class="reference internal" href="#partitioner"><span class="std std-ref">TRUST available partitioning tools</span></a>).</p>
+<p>The <strong>Larg_joint</strong> keyword allows to specify the overlapping width value.</p>
+<p><strong>Note</strong> the <strong>End</strong> before the last line. It will be useful for the cutting step.</p>
+<p>This block will make the partitioning of your domain into the specified number of sub-domains during the partitioning run.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Adding a block to read the sub-domains</strong></p>
+<blockquote>
+<div><p>At last, you will add a block which will be activated during the parallel calculation and will allow to read the sub-domains:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># BEGIN SCATTER</span>
+Scatter<span class="w"> </span>DOM<span class="w"> </span>.Zones<span class="w"> </span>my_domain
+END<span class="w"> </span>SCATTER<span class="w"> </span><span class="c1">#</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="partitionning-assisted-method">
+<span id="makepardata"></span><h3 id="partitionning-assisted-method">Partitionning: “Assisted” method<a class="headerlink" href="#partitionning-assisted-method" title="Permalink to this heading">¶</a></h3>
+<p>Here we will use the <strong>trust -partition datafile</strong> command line to make the partitioning step. We consider that you have correctly add the “#” in your <em>my_data_file.data</em> file with the partitioning block and cutting block.</p>
+<p><strong>Be careful</strong> with the hashtags “#”, they are interpreted by the script!</p>
+<p>To automatically perform the partitioning step and obtain the parallel data file, you have to run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">trust</span> <span class="o">-</span><span class="n">partition</span> <span class="n">my_data_file</span> <span class="p">[</span><span class="n">parts_number</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Here parts_number is the number of sub-domains created but it is also the number of processors which will be used.</p>
+</div>
+<p>This command creates:</p>
+<ul>
+<li><p>a <em>SEQ_my_data_file.data</em> file which is a backup file of <em>my_data_file.data</em> the sequential data file,</p></li>
+<li><p>a <em>DEC_my_data_file.data</em> file which is the first data file to be run to make the partitioning.</p>
+<p>It is immediately run by the command line <strong>trust -partition datafile</strong> to create a partition, located in the <em>DOM_000n</em><strong>.Zones</strong> files.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The code stops reading this file at the <strong>End</strong> keyword just before the <strong># END PARTITION #</strong> block.</p>
+</div>
+</li>
+<li><p>a <em>PAR_my_data_file.data</em> file which is the data file for the parallel calculation. It reads the <em>DOM_000n</em><strong>.Zones</strong> files through the instruction <strong>“Scatter”</strong>.</p>
+<p><strong>Note</strong> that the meshing and cut of the mesh are commented here.</p>
+</li>
+</ul>
+<p>To see your sub-domains, you can run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">trust</span> <span class="o">-</span><span class="n">mesh</span> <span class="n">PAR_my_data_file</span>
+</pre></div>
+</div>
+<p>For more information, you can do the exercise of the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_tutorial.pdf">TRUST Tutorial</a>.</p>
+</section>
+<section id="trust-available-partitioning-tools">
+<span id="partitioner"></span><h3 id="trust-available-partitioning-tools"><strong>TRUST</strong> available partitioning tools<a class="headerlink" href="#trust-available-partitioning-tools" title="Permalink to this heading">¶</a></h3>
+<p>In <strong>TRUST</strong>, you can make partitioning with:</p>
+<ul>
+<li><p>the external partitionning library <a class="reference external" href="http://glaros.dtc.umn.edu/gkhome/views/metis">METIS</a> (open source).</p>
+<p>It is a general algorithm that will generate a partition of the domain</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Partition_tool<span class="w"> </span>Metis
+<span class="o">{</span>
+<span class="w">   </span>nb_parts<span class="w"> </span>N
+<span class="w">   </span><span class="o">[</span>use_weights<span class="o">]</span>
+<span class="w">   </span><span class="o">[</span>pmetis<span class="w"> </span><span class="p">|</span><span class="w"> </span>kmetis<span class="o">]</span>
+<span class="w">   </span><span class="o">[</span>nb_essais<span class="w"> </span>N<span class="o">]</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>internal <strong>TRUST</strong> partitioning tool <strong>Tranche</strong> which makes parts by cutting the domain following x, y and/or z directions.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>partition_tool<span class="w"> </span>Tranche
+<span class="o">{</span>
+<span class="w">   </span>tranches<span class="w"> </span>nx<span class="w"> </span>ny<span class="w"> </span><span class="o">[</span>nz<span class="o">]</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+<p>Figure 3 is an example of what you can obtain by cutting a 1m x 1m square, divided in three parts using <a class="reference external" href="http://glaros.dtc.umn.edu/gkhome/views/metis">METIS</a> and the same
+square divided in Figure 4 into three slices following the x direction with <strong>Tranche</strong>.</p>
+<figure class="small-caption align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/partition_metis.jpeg"><img alt="Partition_metis" src="../_images/partition_metis.jpeg" style="width: 300px;"/></a>
+<figcaption>
+<p><span class="caption-text">Figure 3: METIS partition.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="small-caption align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/partition_tranche.jpeg"><img alt="Partition_tranche" src="../_images/partition_tranche.jpeg" style="width: 300px;"/></a>
+<figcaption>
+<p><span class="caption-text">Figure 4: TRANCH partition.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<style>
+.small-caption {
+  display: table;
+  caption-side: bottom;
+  font-size: smaller;
+  margin-top: 5px;
+  text-align: center; /* Add this line */
+}
+</style><p>For more information, see the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_Reference_Manual.pdf">TRUST Reference Manual</a>.</p>
+</section>
+<section id="overlapping-width-value">
+<h3 id="overlapping-width-value">Overlapping width value<a class="headerlink" href="#overlapping-width-value" title="Permalink to this heading">¶</a></h3>
+<p>To make the partitioning, you will have to specify the <em>overlapping width value</em>. This value corresponds to the thickness of the virtual ghost zone (data known by one processor though not owned by it) i.e. the number of vertices or elements on the remote sub-domain known by the local sub-domain (see Figure 5).</p>
+<div class="center docutils container">
+<figure class="small-caption align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/overlap.jpeg"><img alt="Overlapping width" src="../_images/overlap.jpeg" style="width: 700px;"/></a>
+<figcaption>
+<p><span class="caption-text">Figure 5: Overlapping width.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div>
+<p>This value depends on the space discretization scheme orders:</p>
+<ul class="simple">
+<li><p>1 if 1st or 2nd order.</p></li>
+<li><p>2 if 3rd or 4th order.</p></li>
+</ul>
+<p><strong>Note</strong> that in general, you will use “2”!</p>
+</section>
+</section>
+<section id="running-a-parallel-calculation">
+<h2 id="running-a-parallel-calculation">Running a Parallel Calculation<a class="headerlink" href="#running-a-parallel-calculation" title="Permalink to this heading">¶</a></h2>
+<section id="on-a-pc">
+<h3 id="on-a-pc">On a PC<a class="headerlink" href="#on-a-pc" title="Permalink to this heading">¶</a></h3>
+<p>To launch the calculation, you have to run the calculation by the usual command completed by the number of processors needed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">trust</span> <span class="n">my_parallel_data_file</span> <span class="n">procs_number</span>
+</pre></div>
+</div>
+<p>and <em>procs_number</em> is the number of processors used. In fact it is the same as the number of sub-domains.</p>
+<p>You can see the <strong>TRUST</strong>&amp; <strong>TrioCFD</strong> user slides in the “Parallel calculation” section for more information. Also work the exercises in the <a class="reference external" href="https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_tutorial.pdf">TRUST Tutorial</a>.</p>
+</section>
+<section id="on-a-cluster">
+<h3 id="on-a-cluster">On a cluster<a class="headerlink" href="#on-a-cluster" title="Permalink to this heading">¶</a></h3>
+<p>You must submit your job in a queue system. For this, you must have a submission file. <strong>TRUST</strong> can create a submission file for you <strong>on clusters on which the support team has done installations</strong>.</p>
+<p>To create this file, run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">trust</span> <span class="o">-</span><span class="n">create_sub_file</span> <span class="n">my_parallel_data_file</span>
+</pre></div>
+</div>
+<p>You obtain a file named <strong>sub_file</strong>, you can open it and verify/change values(for example the name of the job, the name of the exe, …).</p>
+<p>Then you must submit you calculation with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">sbatch</span> <span class="n">sub_file</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">ccc_msub</span> <span class="n">sub_file</span>
+</pre></div>
+</div>
+<p>following the queue system of the cluster.</p>
+<p>You can see the <strong>TRUST</strong>&amp; <strong>TrioCFD</strong> user slides in the “Parallel calculation” section for more information.</p>
+</section>
+</section>
+<section id="visualization">
+<span id="visualization-1"></span><h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permalink to this heading">¶</a></h2>
+<p>To visualize your probes, you can use the CurvePlot tool, with the command line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">trust</span> <span class="o">-</span><span class="n">evol</span> <span class="n">my_parallel_data_file</span>
+</pre></div>
+</div>
+<p>or use Gnuplot or any software which reads values in columns in a file.</p>
+<p>There are three ways to visualize your parallel results with VisIt:</p>
+<ul>
+<li><p>HPCDrive or Nice DCV on CCRT/TGCC clusters: opens a deported graphic session on dedicated nodes with more memory (on TGCC cluster: <a class="reference external" href="https://visu-tgcc.ccc.cea.fr/HPCDrive/home">HPCDrive</a>),</p></li>
+<li><p>local mode: copy your results from the cluster to your local computer and open it with a local parallel version of VisIt with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">visit</span> <span class="o">-</span><span class="n">np</span> <span class="mi">4</span> <span class="o">&amp;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>You can have a look at the <strong>TRUST</strong>&amp; <strong>TrioCFD</strong> user slides in the “Parallel calculation description” section.</p>
+</section>
+<section id="useful-information">
+<h2 id="useful-information">Useful Information<a class="headerlink" href="#useful-information" title="Permalink to this heading">¶</a></h2>
+<section id="modify-the-mesh">
+<h3 id="modify-the-mesh">Modify the mesh<a class="headerlink" href="#modify-the-mesh" title="Permalink to this heading">¶</a></h3>
+<p>If you want to modify your mesh, you have two possibilities:</p>
+<ul>
+<li><p>modify the <em>my_data_file.data</em> file and run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">trust</span> <span class="o">-</span><span class="n">partition</span> <span class="n">my_data_file</span> <span class="p">[</span><span class="n">parts_number</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Be carefull it will erase the <em>SEQ_my_data_file.data</em>, <em>DEC_my_data_file.data</em> and <em>PAR_my_data_file.data</em> files and creates new ones.</p>
+<p>Then it will run the new <em>DEC_my_data_file.data</em> file which gives your new <em>DOM_000n</em><strong>.Zones</strong> files.</p>
+</li>
+<li><p>modify the meshing part of file <em>DEC_my_data_file.data</em> and run it with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">trust</span> <span class="n">DEC_my_data_file</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Then run the parallel calculation normally, on the new <em>DOM_000n</em><strong>.Zones</strong> files.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">trust</span> <span class="n">PAR_my_data_file</span> <span class="n">procs_number</span>
+</pre></div>
+</div>
+</section>
+<section id="modify-calculation-parameters">
+<h3 id="modify-calculation-parameters">Modify calculation parameters<a class="headerlink" href="#modify-calculation-parameters" title="Permalink to this heading">¶</a></h3>
+<p>If you want to modify the calculation parameters, you can modify:</p>
+<ul>
+<li><p>the file <em>my_data_file.data</em> and run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">trust</span> <span class="o">-</span><span class="n">partition</span> <span class="n">data_file_name</span> <span class="p">[</span><span class="n">parts_number</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>But it will erase the <em>SEQ_my_data_file.data</em>, <em>DEC_my_data_file.data</em> and <em>PAR_my_data_file.data</em> files and create new ones.</p>
+<p>Then it will run the new <em>DEC_my_data_file.data</em> file which gives your new <em>DOM_000n</em><strong>.Zones</strong> files.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In that case, you don’t need to re-create the mesh so you can use the second point below:</p>
+</div>
+</li>
+<li><p>modify the <em>PAR_my_data_file.data</em> file <em>without</em> running <strong>trust -partition datafile</strong> command line.</p></li>
+</ul>
+<p>Then run the <em>PAR_my_data_file.data</em> file with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">trust</span> <span class="n">PAR_my_data_file</span> <span class="n">procs_number</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If after a certain time, you want to reopen an old case and understand want you did in it without any doubts, you may create two files by hands:</p>
+<ul class="simple">
+<li><p>one “BuildMeshes.data” file only for the mesh and the cut of the mesh.</p></li>
+<li><p>one “calculation.data” file for the parallel calculation.</p></li>
+</ul>
+</div>
+<p>You will run it like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">trust</span> <span class="n">BuildMeshes</span>
+<span class="o">&gt;</span> <span class="n">trust</span> <span class="n">calculation</span> <span class="n">processors_number</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="post_process.html" title="Post-processing"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> Previous </span> Post-processing </span>
+              </div>
+            </a>
+          
+          
+            <a href="refs.html" title="Important references"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> Next </span> Important references </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright .
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.0.0.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>
