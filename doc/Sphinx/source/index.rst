@@ -10,11 +10,11 @@ Hi there 👋 and welcome to the **TRUST Generic Guide** documentation !
 
 This document constitutes the generic guide for **TRUST software** and its **Baltik projects**.
 
-:Website: https://cea-trust-platform.github.io
+:TRUST Website: https://cea-trust-platform.github.io
 
-:Code: https://github.com/cea-trust-platform/trust-code
+:TRUST Code: https://github.com/cea-trust-platform/trust-code
 
-:Contact: trust@cea.fr
+:TRUST Support Contact: trust@cea.fr
 
 Table Of Contents
 =================
