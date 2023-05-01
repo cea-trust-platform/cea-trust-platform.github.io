@@ -99,7 +99,6 @@ To launch a calculation with **TRUST**, you need to write a "data file" which is
 -  in that document, words in **bold** are **TRUST** keywords, you can highlight them in your file editor with the command line:
    
    .. code-block:: bash
-      :emphasize-lines: 2
 
       trust -config gedit|vim|emacs
 
@@ -555,7 +554,7 @@ We will explain here how to do such work:
 
    .. https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_tutorial.pdf
 
-Visualization
--------------
+Interactive Evolution
+---------------------
 
 To learn how to use the "**-evol**" option, you can see the first exercise of the **TRUST** tutorial: Flow around an obstacle available on `this link <https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_tutorial.pdf>`__.

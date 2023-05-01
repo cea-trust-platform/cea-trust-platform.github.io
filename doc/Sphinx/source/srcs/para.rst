@@ -1,4 +1,4 @@
-Parallel calculation
+Parallel Simulations
 ====================
 
 **TRUST** is a plateform which allows to make parallel calculation following some basic rules:

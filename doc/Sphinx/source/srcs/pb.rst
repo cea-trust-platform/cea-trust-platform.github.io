@@ -488,8 +488,8 @@ Here are some available source terms. For a complete list, refer to the `TRUST R
 
 -  **Puissance_thermique** field_type bloc_lecture_champ
 
-Post-Processing
----------------
+Post-Processings
+----------------
 
 Before post-processing fields, during a run, **TRUST** creates several files which contain information about the calculation, the convergence, fluxes, balances... See section :ref:`Output files` for more information.
 

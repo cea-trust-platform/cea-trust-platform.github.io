@@ -66,8 +66,6 @@ To define the domain, you must name it. This is done thanks to the following blo
 
 Then you must add your mesh to your simulation.
 
-.. _Mesh:
-
 Mesh
 ----
 
@@ -224,8 +222,8 @@ To use it, launch in a bash terminal:
 
 To see how to use VisIt, look at the first `TRUST Tutorial <https://github.com/cea-trust-platform/trust-code/blob/master/doc/TRUST/TRUST_tutorial.pdf>`__ exercise; Flow around an Obstacle.
 
-Discretization
---------------
+Spatial Discretization
+----------------------
 
 You have to specify a discretization type to run a simulation. See the `Discretizations <https://cea-trust-platform.github.io/classes/discretizations>`__ section on the TRUST's website.
 
@@ -348,6 +346,7 @@ Until now, we have created some objects, now we must associate them together. Fo
    Associate my_problem my_domain
    Associate my_problem my_time_scheme
 
+.. _disc:
 
 Discretization
 ~~~~~~~~~~~~~~
