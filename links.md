@@ -32,6 +32,10 @@ Here are some useful links related to the TRUST platform; articles, libraries, t
 
 	The TRUST code is available **[here](https://github.com/cea-trust-platform/trust-code)** on GitHub !
 	
+	To check the TRUST Generic Documentation via an html Sphinx format, visit **[this](https://cea-trust-platform.github.io/trust-documentation.github.io)** page !
+	
+	To visit the generated Doxygen code documenation, click **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io)** !
+	
 	Also, check out our **[YouTube](https://www.youtube.com/@ceatrustplatform8802)** channel. Dont forget to like the page! 😜
 
 - **TrioCFD**
@@ -55,3 +59,7 @@ Here are some useful links related to the TRUST platform; articles, libraries, t
 - **ICoCo**
 
 	ICoCo stands for Interface for Code Coupling. This is a norm that a code may choose to implement to facilitate its coupling with other ICoCo-compliant codes. The public ICoCo git repository is available **[here](https://github.com/cea-trust-platform/icoco-coupling)**.
+	
+	For TRUST users, it is directly possible to use ICoCo via a python package (SWIG wrapper). This is built within the ICoCo's tool distributed with the TRUST platform.
+	
+	For TRUST Baltiks users, you should check out **[this](https://github.com/cea-trust-platform/icoco-swig-baltik)** project in order to use ICoCo within its python interface.
