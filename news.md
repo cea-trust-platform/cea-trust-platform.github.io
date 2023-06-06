@@ -12,9 +12,13 @@ Please post your issues/discussions on **[this](https://github.com/cea-trust-pla
 
 # Version Release
 
+- **Mai 2023 :** Release of TRUST-V1.9.2
+
 - **Dec 2022 :** Release of TRUST-V1.9.1
 
 # Breaking news and new features 
+
+- **Mai 2023 :** TRUST's Generic Guide Documentation is available in an html Sphinx format on **[this](https://cea-trust-platform.github.io/trust-documentation.github.io)** link !
 
 - **Avril 2023 :** In the next version (coming soon), it will be possible to call CoolProp from TRUST! Stay tuned for more information.
 
