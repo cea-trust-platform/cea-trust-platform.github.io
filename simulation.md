@@ -54,6 +54,10 @@ It is important to note the names of all the boundaries because they will need t
 
 Now, you can start constructing your data file.
 
+**Note:** You can get the Mesh.med file used in this section by doing
+
+	wget https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/simulation/Mesh.med
+
 # Step 3 : Define the domain and read the mesh
 
 You should start by defining the dimension of the domain. In this case it is 2D.
