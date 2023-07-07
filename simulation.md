@@ -1,14 +1,14 @@
 ---
-title: Run Your Simulation !
+title: Run Your Simulation!
 layout: page
-description: Run Your Simulation !
+description: Run Your Simulation!
 ---
 
 To run a TRUST simulation, all you have to do is write a correctly formatted data file. This is one of the advantages offered by the platform, allowing the user to change, modify, and test calculations without needing to write C++ code or recompile/link with the TRUST library. However, there is a specific syntax that must be respected to ensure that the TRUST interpreter can read the data file correctly and perform the necessary calculations.
 
-**Attention**: TRUST is sensitive to empty spaces. To avoid issues, use an empty space before and after each keyword. For example, **Read_MED{domain dom file Mesh.med}** wont work ! You should write **Read_MED { domain dom file Mesh.med }** (note the spaces before and after the  braces { ... }.
+**Attention**: TRUST is sensitive to empty spaces. To avoid issues, use an empty space before and after each keyword. For example, **Read_MED{domain dom file Mesh.med}** won't work! You should write **Read_MED { domain dom file Mesh.med }** (note the spaces before and after the  braces `{ ... }`).
 
-**Attention**: It is possible to write comments in you data file. This can be done by the **#** character; **#** at the begining and at the end of the commented line/paragraph. It is also possible to put your comments between **/*** and ***/**, as the bloc comments in C++. Again, attention to the empty spaces. See these examples
+**Attention**: It is possible to write comments in you data file. This can be done by the **#** character; **#** at the begining and at the end of the commented line/paragraph. It is also possible to put your comments between **/*** and ***/**, as the bloc comments in C++. Again, attention to the empty spaces. See these examples:
 
 	# THIS IS A COMMENT #
 	/* THIS ALSO */
@@ -32,13 +32,13 @@ To run a TRUST simulation, all you have to do is write a correctly formatted dat
 	
 	/* NEITHER IS THIS
 
-In this section, we will consider an example of a test case where all the steps required to write the corresponding data file will be detailed. The selected example is a 2D flow around a square obstacle in an open domain (Von Karman vortex street). We recomment to use the SI units for all quantities (velocity, viscosity, etc...)
+In this section, we will consider an example of a test case where all the steps required to write the corresponding data file will be detailed. The selected example is a 2D flow around a square obstacle in an open domain (Von Karman vortex street). We recommend to use the SI units for all quantities (velocity, viscosity, etc.).
 
-# Step 1 : Create an empty data file
+# Step 1: Create an empty data file
 
 Create an empty data file named Obstacle.data in an empty Obstacle repository.
 
-# Step 2 : Create your mesh
+# Step 2: Create your mesh
 
 Prepare a meshed domain that will be used in the simulation. In this example, a mesh named `Mesh` defined on a domain named `dom` and written in a MED file named `Mesh.med` is used. The MED file includes five boundaries:
 
@@ -58,13 +58,13 @@ Now, you can start constructing your data file.
 
 	wget https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/simulation/Mesh.med
 
-# Step 3 : Define the domain and read the mesh
+# Step 3: Define the domain and read the mesh
 
 You should start by defining the dimension of the domain. In this case it is 2D.
 
-You should create an instance of the `Domaine` class, named dom as that you used in the MED file.
+You should then create an instance of the `Domaine` class, named dom as that you used in the MED file.
 
-Read the MED file and the mesh using the class `Read_MED`. Since the generated was a bit coarse, TRUST allows you to reffine the mesh if you like to. This can be done via the class `Raffiner_isotrope ` applied to your domain `dom`.
+Read the MED file and the mesh using the class `Read_MED`. Since the generated mesh was a bit coarse, TRUST allows you to refine the mesh if you like to. This can be done via the class `Raffiner_isotrope ` applied to your domain `dom`.
 
 Start by inserting this in Obstacle.data
 
@@ -80,11 +80,11 @@ Start by inserting this in Obstacle.data
 	# Refine the mesh to have better results (optional) #
 	Raffiner_isotrope dom
 
-# Step 4 : Define the discretization and the problem
+# Step 4: Define the discretization and the problem
 
-The mesh used here allows us to use the VDF discretization. So use the class `VDF` to create an instance with the variable `my_discretisation`.
+The mesh used here allow us to use the VDF discretization. So use the class `VDF` to create an instance with the variable `my_discretisation`.
 
-We will solve just the Navier-Stokes (NS) equations, so its a hydraulic problem. Create an instance of `Pb_hydraulique` and name it `pb`.
+We will solve just the Navier-Stokes (NS) equations, so it is a hydraulic problem. Create an instance of `Pb_hydraulique` and name it `pb`.
 
 Insert this in Obstacle.data 
 
@@ -94,7 +94,7 @@ Insert this in Obstacle.data
 	# Problem definition #
 	Pb_hydraulique pb
 
-# Step 5 : Define the time integration scheme
+# Step 5: Define the time integration scheme
 
 Its for you to define what time scheme to use. Here, we will use the Euler explicit scheme. For that, we create an instance of `Scheme_euler_explicit`, I called it `my_scheme`, and we read its parameters. 
 
@@ -124,7 +124,7 @@ This bloc contains a lot of parameters, try to read the comments and insert the 
 	    tmax 10.0
 	}
 
-# Step 6 : Assosciate the instantiated objects
+# Step 6: Assosciate the instantiated objects
 
 Now, you need to link the domaine, the discretization and the time scheme to the problem. This is done by the C++ class `Associate` and `Discretize`.
 
@@ -135,19 +135,19 @@ Insert this in Obstacle.data
 	Associate pb my_scheme /* Assosciate time scheme */
 	Discretize pb my_discretisation /* Discretize the domain */
 	
-# Step 7 : Read the problem (medium, equation, BC's, post-processings)
+# Step 7: Read the problem (medium, equation, BC's, post-processings)
 
-Thats the main point now: define the problem !
+That's the main point now: define the problem!
 
 Start by defining the incompressible medium `Fluide_incompressible`.
 
 Once done, read the Navier-Stokes equation `Navier_Stokes_standard`. Provide the pressure solver `Solveur_pression` and the spatial scheme to be used for the convection operator (here we use the third order `Quick` scheme). 
 
-Precise the initial and boundary conditions. This is done by the `Initial_conditions` and `Boundary_conditions` keywords. Here, we consider that the fluid is at rest at the initial state; so the velocity field is nul. At the boundaries, we consider a no-slip BC at the obstacle borders and symmetry at the top/bottom walls. At the inlet, we fix the horizontal velocity to 1 m/s, while the pressure is fixed at the outlet (open boundary).
+Precise the initial and boundary conditions. This is done by the `Initial_conditions` and `Boundary_conditions` keywords. Here, we consider that the fluid is at rest at the initial state; so the velocity field is null. At the boundaries, we consider a no-slip BC at the obstacle borders and symmetry at the top/bottom walls. At the inlet, we fix the horizontal velocity to 1 m/s, while the pressure is fixed at the outlet (open boundary).
 
-Finaly, ask TRUST to write you the velocity and vorticity fields to visualize ! Thus, create and read a `Post_processing` object.
+Finally, ask TRUST to write you the velocity and vorticity fields to visualize them after! Thus, create and read a `Post_processing` object.
 
-Try to read carefuly the syntax/comments and insert the bloc in Obstacle.data.
+Try to read carefully the syntax/comments and insert the bloc in Obstacle.data.
 
 	# Problem description #
 	Read pb
@@ -200,7 +200,7 @@ Try to read carefuly the syntax/comments and insert the bloc in Obstacle.data.
 	    }
 	}
 	
-# Step 8 : Solve the problem !
+# Step 8: Solve the problem!
 
 Now, end your data file by inserting this bloc. This will tell TRUST to run and solve the problem.
 
@@ -211,7 +211,7 @@ Save your Obstacle.data file and run the simulation by doing:
 
 	trust Obstacle.data
 
-# Results ! Its cool 🍻🤗🍻
+# Results! It's cool 🍻🤗🍻
 
 Now, you can visualize your results! You should see an animation similar to the one shown below! It is the well known Von Karman vortex street!
 
