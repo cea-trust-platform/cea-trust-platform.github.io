@@ -38,7 +38,7 @@ td, th {
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/antoine.jpeg?raw=true" alt="Antoine" width="150"/> | <img src="https://avatars.githubusercontent.com/u/46487340?v=4" alt="Yannick" width="150"/> | <img src="[https://media.licdn.com/dms/image/C4D03AQHIvM1Hrr46aQ/profile-displayphoto-shrink_800_800/0/1606043297602?e=1686787200&v=beta&t=QKLeCrMY7SDKAq_rPhnwSiiqtgq9GkzmGckuQYWZlos](https://media.licdn.com/dms/image/C4D03AQHIvM1Hrr46aQ/profile-displayphoto-shrink_800_800/0/1606043297602?e=1698278400&v=beta&t=XQrB8nV6G3Dfk0MkbhbBDpIFdPyLbyQfS9KxDvzwVhE)" alt="Corentin" width="150"/> |
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/antoine.jpeg?raw=true" alt="Antoine" width="150"/> | <img src="https://avatars.githubusercontent.com/u/46487340?v=4" alt="Yannick" width="150"/> | <img src="https://media.licdn.com/dms/image/C4D03AQHIvM1Hrr46aQ/profile-displayphoto-shrink_800_800/0/1606043297602?e=1698278400&v=beta&t=XQrB8nV6G3Dfk0MkbhbBDpIFdPyLbyQfS9KxDvzwVhE" alt="Corentin" width="150"/> |
 | **Antoine Gerschenfeld** | **Yannick Gorsse** | **Corentin Reiss** |
 | Research Engineer, Ph.D. | Research Engineer, Ph.D. | Ph.D. Student |
 | | [Linkedin](https://www.linkedin.com/in/yannick-gorsse-45770786/), [Research Gate](https://www.researchgate.net/profile/Yannick-Gorsse) | [Linkedin](https://www.linkedin.com/in/corentin-reiss-903840183/)|
