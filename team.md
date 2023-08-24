@@ -19,7 +19,7 @@ td, th {
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="https://media.licdn.com/dms/image/C4E03AQFgI2Ww7CPiaw/profile-displayphoto-shrink_800_800/0/1517556307649?e=1686787200&v=beta&t=fLtTC1PDeqfHGveXfoIBYjbuUe55VWforrFvapvAyT0" alt="Adrien" width="150"/> | <img src="https://media.licdn.com/dms/image/C5603AQE0o1MOMSf2BQ/profile-displayphoto-shrink_800_800/0/1516266451073?e=1686787200&v=beta&t=n5o59ZNzPQ6iJ00kVW1ehKY8HE6qqC3oKbmACLT1M5c" alt="Pierre" width="150"/> | <img src="https://media.licdn.com/dms/image/D4E03AQFmZbSd5Z7kzQ/profile-displayphoto-shrink_800_800/0/1672531116829?e=1686787200&v=beta&t=lEbJbfMUDishcUqgaP8qohtDs18HmpHSfAVfMeGPizA" alt="Elie" width="150"/> |
+| <img src="https://media.licdn.com/dms/image/C4E03AQFgI2Ww7CPiaw/profile-displayphoto-shrink_800_800/0/1517556307649?e=1698278400&v=beta&t=bjGQS0XnlFcodqd0PNO5q3uUtCDLgk-HgCnbZKWKK3M" alt="Adrien" width="150"/> | <img src="https://media.licdn.com/dms/image/C5603AQE0o1MOMSf2BQ/profile-displayphoto-shrink_800_800/0/1516266451073?e=1698278400&v=beta&t=WA1N0EA6Zh2PLCX1yOw_cUy6h-KZEPAbVV_xdBBdZ-k" alt="Pierre" width="150"/> | <img src="https://media.licdn.com/dms/image/D4E03AQFmZbSd5Z7kzQ/profile-displayphoto-shrink_800_800/0/1672531116829?e=1698278400&v=beta&t=MpQTA4F2u6Eq0XAJ_AsYHK2W9CCpvFbNED8fTt-PLTQ" alt="Elie" width="150"/> |
 | **Adrien Bruneton** | **Pierre Ledac** | **Élie Saikali** |
 | Research Engineer | Research Engineer | Research Engineer, Ph.D. |
 | Head of the TRUST team | | |
@@ -28,7 +28,7 @@ td, th {
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/anida.jpg?raw=true" alt="Anida" width="150"/> | <img src="https://media.licdn.com/dms/image/C4E03AQHuYKLg3xf3BQ/profile-displayphoto-shrink_800_800/0/1517341065897?e=1687392000&v=beta&t=K8x--vJB6s3K-FU9zyzdpatyQkCtT3l5VvBb8Og9siA" alt="Luc" width="150"/> | |
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/anida.jpg?raw=true" alt="Anida" width="150"/> | <img src="https://media.licdn.com/dms/image/C4E03AQHuYKLg3xf3BQ/profile-displayphoto-shrink_800_800/0/1517341065897?e=1698278400&v=beta&t=8dr7SPH8ewS3z-bUr0gTMSPcEd6NuLDXLR4lT5YoJ0I" alt="Luc" width="150"/> | |
 | **Anida Khizar** | **Luc Lecointre** | |
 | Research Engineer | Research Engineer, Ph.D. | |
 | | [Linkedin](https://www.linkedin.com/in/luc-lecointre-269754a4/), [Research Gate](https://www.researchgate.net/profile/Luc-Lecointre) | |
@@ -38,7 +38,7 @@ td, th {
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/antoine.jpeg?raw=true" alt="Antoine" width="150"/> | <img src="https://avatars.githubusercontent.com/u/46487340?v=4" alt="Yannick" width="150"/> | <img src="https://media.licdn.com/dms/image/C4D03AQHIvM1Hrr46aQ/profile-displayphoto-shrink_800_800/0/1606043297602?e=1686787200&v=beta&t=QKLeCrMY7SDKAq_rPhnwSiiqtgq9GkzmGckuQYWZlos" alt="Corentin" width="150"/> |
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/antoine.jpeg?raw=true" alt="Antoine" width="150"/> | <img src="https://avatars.githubusercontent.com/u/46487340?v=4" alt="Yannick" width="150"/> | <img src="[https://media.licdn.com/dms/image/C4D03AQHIvM1Hrr46aQ/profile-displayphoto-shrink_800_800/0/1606043297602?e=1686787200&v=beta&t=QKLeCrMY7SDKAq_rPhnwSiiqtgq9GkzmGckuQYWZlos](https://media.licdn.com/dms/image/C4D03AQHIvM1Hrr46aQ/profile-displayphoto-shrink_800_800/0/1606043297602?e=1698278400&v=beta&t=XQrB8nV6G3Dfk0MkbhbBDpIFdPyLbyQfS9KxDvzwVhE)" alt="Corentin" width="150"/> |
 | **Antoine Gerschenfeld** | **Yannick Gorsse** | **Corentin Reiss** |
 | Research Engineer, Ph.D. | Research Engineer, Ph.D. | Ph.D. Student |
 | | [Linkedin](https://www.linkedin.com/in/yannick-gorsse-45770786/), [Research Gate](https://www.researchgate.net/profile/Yannick-Gorsse) | [Linkedin](https://www.linkedin.com/in/corentin-reiss-903840183/)|
