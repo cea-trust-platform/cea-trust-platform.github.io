@@ -32,9 +32,9 @@ Here are some useful links related to the TRUST platform; articles, libraries, t
 
 	The TRUST code is available **[here](https://github.com/cea-trust-platform/trust-code)** on GitHub !
 	
-	To check the TRUST Generic Documentation via an html Sphinx format, visit **[this](https://cea-trust-platform.github.io/trust-documentation.github.io)** page !
+	To check the TRUST Documentation page, click **[here](https://cea-trust-platform.readthedocs.io/en/latest/)**.
 	
-	To visit the generated Doxygen code documenation, click **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io)** !
+	To visit the generated Doxygen code documenation, click **[here](https://cea-trust-platform.readthedocs.io/en/latest/doxy/index.html)** !
 	
 	Also, check out our **[YouTube](https://www.youtube.com/@ceatrustplatform8802)** channel. Dont forget to like the page! 😜
 
