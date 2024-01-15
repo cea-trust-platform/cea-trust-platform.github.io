@@ -18,6 +18,12 @@ Please post your issues/discussions on **[this](https://github.com/cea-trust-pla
 
 - **December 2022 :** Release of TRUST-V1.9.1 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.1)**).
 
+# Release Notes
+
+Here is a detailed list of the TRUST RELEASE\_NOTES by version (new features, BUG fixes, improvements, ...)
+
+- **[TRUST-V1.9.3](_releaseNotes/RN_v1_9_3.md)**
+
 # Breaking news and new features 
 
 - **November 2023 :** TRUST's Documentation page is is available **[here](https://cea-trust-platform.readthedocs.io/en/latest/)** ! It contains a link towards the TRUST Generic Guide, Keyword Reference Manual, TRUST Tools Documentation (jupyter and stats packages) and the C++ API doxygen documentation.
