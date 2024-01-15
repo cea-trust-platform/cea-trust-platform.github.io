@@ -12,6 +12,13 @@ logo:
 
 home: 
   limit_classes: 6
+  
+gems:
+  - jekyll-relative-links
+  
+relative_links:
+  enabled: true
+  collections: true
 
 collections:
   classes:
