@@ -22,7 +22,7 @@ Please post your issues/discussions on **[this](https://github.com/cea-trust-pla
 
 Here is a detailed list of the TRUST RELEASE\_NOTES by version (new features, BUG fixes, improvements, ...)
 
-- **[TRUST-V1.9.3](RN_v1_9_3.md)**
+- **[TRUST-V1.9.3](RN/v1_9_3.md)**
 
 # Breaking news and new features 
 
