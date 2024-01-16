@@ -22,7 +22,7 @@ This page is dedicated to the TRUST's breaking news, release notes, tags and ann
 
 - **December 2022 :** Release of TRUST-V1.9.1 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.1)**).
 
-# DetailedRelease Notes
+# Detailed Release Notes
 
 Have a look to this section if you are interested in the detailed version of the TRUST RELEASE\_NOTES. You can find here all the code new features, BUG fixes, improvements, ...
 
