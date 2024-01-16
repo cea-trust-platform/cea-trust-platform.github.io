@@ -4,25 +4,7 @@ layout: page
 description: news
 ---
 
-This page is dedicated to the TRUST breaking news and announcements. 
-
-# Github Discussions and Announcements
-
-Please post your issues/discussions on **[this](https://github.com/cea-trust-platform/trust-code/discussions)** page !
-
-# Version Release
-
-- **November 2023 :** Release of TRUST-V1.9.3 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.3)**).
-
-- **Mai 2023 :** Release of TRUST-V1.9.2 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.2)**).
-
-- **December 2022 :** Release of TRUST-V1.9.1 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.1)**).
-
-# Release Notes
-
-Here is a detailed list of the TRUST RELEASE\_NOTES by version (new features, BUG fixes, improvements, ...)
-
-- **[TRUST-V1.9.3](RN/v1_9_3.md)**
+This page is dedicated to the TRUST's breaking news, release notes, tags and announcements. 
 
 # Breaking news and new features 
 
@@ -31,6 +13,24 @@ Here is a detailed list of the TRUST RELEASE\_NOTES by version (new features, BU
 - **Mai 2023 :** TRUST's Generic Guide Documentation is available in an html Sphinx format.
 
 - **Avril 2023 :** In the next version (coming soon), it will be possible to call CoolProp from TRUST! Stay tuned for more information.
+
+# Version Release & tags
+
+- **November 2023 :** Release of TRUST-V1.9.3 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.3)**).
+
+- **Mai 2023 :** Release of TRUST-V1.9.2 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.2)**).
+
+- **December 2022 :** Release of TRUST-V1.9.1 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.1)**).
+
+# DetailedRelease Notes
+
+Have a look to this section if you are interested in the detailed version of the TRUST RELEASE\_NOTES. You can find here all the code new features, BUG fixes, improvements, ...
+
+- **[TRUST-V1.9.3](RN/v1_9_3.md)**
+
+# Github Discussions and Announcements
+
+Please post your issues/discussions on **[this](https://github.com/cea-trust-platform/trust-code/discussions)** page !
 
 # Seminars
 
