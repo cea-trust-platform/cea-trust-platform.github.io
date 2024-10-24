@@ -5,7 +5,7 @@ weight: 7
 
 Do you know that CFD refers to Colorful Fluid Dynamics ? OK, it is not exactly that but ... it can be !
 
-Moreover, do you know also that the best moments you spend after running a simulation are those where you visualize your results. With TRUST, this is surely possible. However, keep in mind that you should explicitly define what you want to visualize, which fields, probes, statistics, which format and at what frequency. 
+Moreover, do you know also that the best moments you spend after running a simulation are those where you visualize your results. With TRUST, this is surely possible. However, keep in mind that you should explicitly define what you want to visualize, which fields, probes, statistics, which format and at what frequency.
 
 All this is done via the TRUST C++ classes: `Post_processing` or `Post_processings` (aliases `Postraitement` or `Postraitements`). The difference between both classes is that the first one creates a single post-processing object, while the other can creates N objects if you ask for N post-processing blocks. These keywords should be placed at the end of the `Problem` block. Click **[here](https://cea-trust-platform.github.io/TRUST_Doxygen.github.io/html/classPostraitement__base.html)** to see the Doxygen documentation of the `Postraitement` class.
 
@@ -33,19 +33,19 @@ This is done by the C++ class `Fields` or `Champs`. Here you can specify the fre
         }
     }
 
-It is also possible to specify the output format of files. This is done by the keywoed `Format`, where three formats are available: `Lml`, `Lata` and `Med`. The default format is `Lml`, used for the non-regression verification only. We recommend `Lata` format for post-processing. Results can be visualized by **[VisIt](https://visit-dav.github.io/visit-website/index.html)**, **[Salome](https://www.salome-platform.org/?lang=fr)** (Paravis module), **[Paraview](https://www.paraview.org/)**. It is possible to use **[TecPlot](https://www.tecplot.com/)** too !
+It is also possible to specify the output format of files. This is done by the keyword `Format`, where four formats are available: `lml`, `lata`, `med` and `cgns`. The default format is `lml`, used for the non-regression verification only. We recommend the `cgns` format for post-processing. Results can be visualized by **[VisIt](https://visit-dav.github.io/visit-website/index.html)**, **[Salome](https://www.salome-platform.org/?lang=fr)** (Paravis module), **[Paraview](https://www.paraview.org/)** and **[TecPlot](https://www.tecplot.com/)**.
 
-**Note:** It is possible to convert files written in the `Lata` format into `Lml` and `Med` format. This is done by the Class `Lata_to_other`. The syntax is the following
+**Note:** It is possible to convert files written in the `lata` format into `lml` and `med` format. This is done by the class `lata_to_other`. The syntax is the following
 
 	lata_to_other med NOM_DU_CAS NOM_DU_CAS
-or 
+or
 
 	lata_to_other lml NOM_DU_CAS NOM_DU_CAS
-	
+
 **Remark 1:** By default, fields are post-processed on the whole domain. You can choose to post-process fields on a boundary or on a specific domain region.
 
-**Remark 2:** Remember fields location for each discretization! If you specify in post-processing block for a field a different location than where it is computed, values will be interpolated. 
-	
+**Remark 2:** Remember fields location for each discretization! If you specify in post-processing block for a field a different location than where it is computed, values will be interpolated.
+
 # List of Existing and Pre-defined Fields
 
 Here is a list of post-processable fields, but it is not the only ones !
@@ -213,7 +213,7 @@ Here is a complete post-processing example taken from the TRUST's `upwind` test 
             compo_graPx_elem
         }
     }
-    
+
     liste_de_postraitements {
         test1 Post_processing {
             Definition_champs {
