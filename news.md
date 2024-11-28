@@ -16,6 +16,8 @@ This page is dedicated to the TRUST's breaking news, release notes, tags and ann
 
 # Version Release & tags
 
+- **November 2024 :** Release of TRUST-V1.9.5 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.5)**).
+- 
 - **Mai 2024 :** Release of TRUST-V1.9.4 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.4)**).
 
 - **November 2023 :** Release of TRUST-V1.9.3 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.3)**).
