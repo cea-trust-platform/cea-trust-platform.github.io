@@ -33,6 +33,14 @@ td, th {
 | Research Engineer | Research Engineer, Ph.D. | |
 | | [Linkedin](https://www.linkedin.com/in/luc-lecointre-269754a4/), [Research Gate](https://www.researchgate.net/profile/Luc-Lecointre) | |
 
+| | | |
+| :---: | :---: | :---: |
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/jomee.jpeg?raw=true" alt="Anida" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/bourgeois.jpg?raw=true" alt="Luc" width="150"/> | |
+| **Guillaume Jomée** | **Rémi Bourgeois** | |
+| Research Engineer, Ph.D. | Research Engineer, Ph.D. | |
+| [Linkedin](https://www.linkedin.com/in/guillaume-jom%C3%A9e-6627b5175/) | [Linkedin](https://www.linkedin.com/in/remi-bourgeois/) | |
+
+
 
 # Main TRUST Contributors (STMF / LMEC)
 
