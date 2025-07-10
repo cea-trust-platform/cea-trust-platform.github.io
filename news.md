@@ -32,8 +32,6 @@ This page is dedicated to the TRUST's breaking news, release notes, tags and ann
 
 Have a look to this section if you are interested in the detailed version of the TRUST RELEASE\_NOTES. You can find here all the code new features, BUG fixes, improvements, ...
 
-- **[TRUST-V1.9.6](RN/v1_9_6.md)**
-
 - **[TRUST-V1.9.5](RN/v1_9_5.md)**
 
 - **[TRUST-V1.9.4](RN/v1_9_4.md)**
