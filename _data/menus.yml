@@ -5,27 +5,21 @@ main:
   - name: "About"
     url: "/about/"
     weight: 2
-  - name: "News"
+  - name: "News/Gallery"
     url: "/news/"
     weight: 3
   - name: "Documentation"
     url: "https://cea-trust-platform.readthedocs.io/en/latest/"
     weight: 4
-  - name: "Classes"
-    url: "/classes/"
-    weight: 5
-  - name: "Simulation"
-    url: "/simulation/"
+  - name: "Cite us"
+    url: "/cite_us/"
     weight: 6
   - name: "Team"
     url: "/team/"
     weight: 7
-  - name: "Links"
-    url: "/links/"
-    weight: 8
   - name: "Contact"
     url: "/contact/"
-    weight: 9
+    weight: 8
 
 footer:
   - name: "Home"
@@ -36,4 +30,7 @@ footer:
     weight: 2
   - name: "Contact"
     url: "/contact/"
+    weight: 3
+  - name: "Cite us"
+    url: "/cite_us/"
     weight: 3
