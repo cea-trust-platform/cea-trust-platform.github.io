@@ -4,25 +4,25 @@ layout: page
 description: About
 ---
 
-TRUST is an object-oriented open-source platform written in C++, with approximately 230K lines of code and about 2500 classes. The code is managed on Git and built via CMake. Thanks to the Message Passing Interface (MPI) approach, the code is massively parallel. TRUST uses Doxygen to automatically generate HTML documentation from its source code (click **[here](https://cea-trust-platform.readthedocs.io/en/latest/doxy/index.html)** to check the Doxygen documentation). 
+**TRUST** is a High Performance Computing (HPC) thermohydraulic engine for Computational Fluid Dynamics (CFD) developed at the Departement of System and Structure Modelisation (DM2S) of the French Atomic Energy Commission (CEA).
+
+**TRUST** is an object-oriented open-source platform written in C++, with approximately 230K lines of code and about 2500 classes. The code is managed on Git and built via CMake. Thanks to the Message Passing Interface (MPI) approach, the code is massively parallel. **TRUST** uses Doxygen to automatically generate a C++ API from its source code (click **[here](https://cea-trust-platform.readthedocs.io/en/latest/doxy/index.html)** to check the Doxygen documentation). 
 
 The CFD platform has already been used to simulate a 1 m3 fuel cell hydrogen leakage scenario with 2 billion mesh elements using the Direct Numerical Simulation approach (DNS). The simulation was carried out on the IRENE-ROME cluster with 50k MPI processors.
 
-Recently, TRUST has been ported to support GPU acceleration (NVidia/AMD).
+**TRUST** is also progressively ported to support GPU acceleration, using the [Kokkos](https://kokkos.org/kokkos-core-wiki/) library. It has been selected to be a demonstrator of the [CExA](https://cexa-project.org/) project.  
 
-TRUST has recently been ported to run on Linux distributions and MacOS. Support for Windows is currently in progress.
+**TRUST** has recently been ported to run on Linux distributions and MacOS. Support for Windows is currently in progress.
 
 The platform is extensively tested (every day) on almost all distributions. The test database consists of about 1300 test cases (executed via ctest) and about 120 validation forms (executed via jupyter-notebook).
 
-Using the TRUST post-processing format, it is possible to animate your simulations with a very nice particle visualization. This is done by the Snorky's project (**page under construction**) and can give something like that (click on the image to see the video on the youtube channel).
+Using the **TRUST** post-processing format, it is possible to animate your simulations with a very nice particle visualization. This is done by the Snorky's project and can give something like that: 
 
-<div align="center">
-  <a href="https://youtu.be/79mzSkn6yJk"><img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/logo/logo-snorky.png?raw=true" alt="TRUST LOGO SNORKY" width="500px"></a>
-</div>
+{% include youtube.html id="79mzSkn6yJk" %}  
 
 # Historical background
 
-The acronym TRUST stands for TRioU Software for Thermohydraulics. The platform was born on June 2015 after splitting Trio_U software (version 1.7.1) in two parts: TRUST & **[TrioCFD](https://triocfd.cea.fr/)**. Both parts are now open source and available **[here](https://github.com/cea-trust-platform)** on GitHub. 
+The acronym **TRUST** stands for TRioU Software for Thermohydraulics. The platform was born on June 2015 after splitting Trio_U software (version 1.7.1) in two parts: **TRUST** & **[TrioCFD](https://triocfd.cea.fr/)**. Both parts are now open source and available **[here](https://github.com/cea-trust-platform)** on GitHub. 
 
 Here are the main stages of the project's evolution, starting from the beginning of the Trio_U project:
 
@@ -42,22 +42,20 @@ Here are the main stages of the project's evolution, starting from the beginning
  
 - **2009 :** v1.6 - Data structure revamped
 
-- **2015 :** v1.7 - Separation TRUST & TrioCFD + switch to open source
+- **2015 :** v1.7 - Separation **TRUST** & TrioCFD + switch to open source
 
 - **2019 :** v1.8 - New polyheadral discretization (PolyMAC)
 
 - **2021 :** v1.8.4 - Multiphase problem + Weakly Compressible model
 
-- **2022 ... :** Modern C++ code (templates, CRTP, ...), support GPU (NVidia/AMD), remove MACROS, ...
+- **2022 :** v.1.9 - Modern C++ code (templates, CRTP, ...), start of GPU porting (NVidia/AMD), remove MACROS
+
+- **2025 :** v.1.9.6 - Support 64 bits integer, VEF discretisation fully ported on GPU
 
 # Use and application domains
 
-TRUST is capable of simulating laminar flows without any turbulence modeling, and it can also be used to simulate turbulent flows using a DNS approach. However, if a user intends to simulate a turbulent flow with a specific turbulence model, TrioCFD is required.
+**TRUST** is capable of simulating laminar flows without any turbulence modeling, and it can also be used to simulate turbulent flows using a DNS approach. However, if a user intends to simulate a turbulent flow with a specific turbulence model, you need to couple **TRUST** with TrioCFD is required.
 
-TRUST serves as a kernel for several independent private projects. As all the base classes and numerical methods are available in TRUST, building an application for a specific domain becomes easier by basing the project on TRUST. This is known as Build an Application Linked to Trio_U Kernel (BALTIK).
+**TRUST** serves as a kernel for several independent private projects. As all the base classes and numerical methods are available in **TRUST**, building an application for a specific domain becomes easier by basing the project on **TRUST**. This is known as Build an Application Linked to Trio_U Kernel (BALTIK).
 
-TRUST is now the foundation for several applications related to nuclear studies and safety, neutronics, porous media, batteries, fuel cells, and more.
-
-# How to compile TRUST ?
-
-In order to clone and compile the TRUST platform via a git configuration, open a bash terminal and simply execute the commands available in this **[README](https://github.com/cea-trust-platform/trust-code#readme)**.
+**TRUST** is now the foundation for several applications related to nuclear studies and safety, neutronics, porous media, batteries, fuel cells, and more.

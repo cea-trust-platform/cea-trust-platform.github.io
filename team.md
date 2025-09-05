@@ -8,7 +8,7 @@ Although the TRUST platform is associated with the Laboratory of High Performanc
 
 Below is a list of the main developers and contributors who have significantly contributed to the development of TRUST, particularly in the area of multi-phase modeling. We would also like to extend our thanks to the former developers who previously worked on this platform!
 
-# Main TRUST Developers (SGLS / LCAN)
+# Main TRUST Developers (SGLS/LCAN)
 
 <style>
 td, th {

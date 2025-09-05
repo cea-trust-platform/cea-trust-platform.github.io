@@ -13,5 +13,10 @@
     "name": "YouTube",
     "link": "https://www.youtube.com/@ceatrustplatform8802",
     "image": "images/social/youtube.svg"
+  },
+  {
+    "name": "readthedocs",
+    "link": "https://cea-trust-platform.readthedocs.io/en/latest/",
+    "image": "images/social/readthedocs.svg"
   }
 ]

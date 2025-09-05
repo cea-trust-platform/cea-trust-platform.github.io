@@ -6,9 +6,9 @@ logo:
   mobile: "images/icon.png"
   mobile_height: "32px"
   mobile_width: "32px"
-  desktop: "images/logo/logo.gif"
-  desktop_height: "90px"
-  desktop_width: "480px"
+  desktop: "images/logo/logo.png"
+  desktop_height: "63px"
+  desktop_width: "336px"
 
 home: 
   limit_classes: 6
