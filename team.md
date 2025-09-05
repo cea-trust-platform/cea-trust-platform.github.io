@@ -28,31 +28,23 @@ td, th {
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/anida.jpg?raw=true" alt="Anida" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/luc.jpg?raw=true" alt="Luc" width="150"/> | |
-| **Anida Khizar** | **Luc Lecointre** | |
-| Research Engineer | Research Engineer, Ph.D. | |
-| | [Linkedin](https://www.linkedin.com/in/luc-lecointre-269754a4/), [Research Gate](https://www.researchgate.net/profile/Luc-Lecointre) | |
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/anida.jpg?raw=true" alt="Anida" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/luc.jpg?raw=true" alt="Luc" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/jomee.jpeg?raw=true" alt="GuillaumeJ" width="150"/>  |
+| **Anida Khizar** | **Luc Lecointre** | **Guillaume Jomée** |
+| Research Engineer | Research Engineer, Ph.D. | Research Engineer, Ph.D. |
+| | [Linkedin](https://www.linkedin.com/in/luc-lecointre-269754a4/), [Research Gate](https://www.researchgate.net/profile/Luc-Lecointre) | [Linkedin](https://www.linkedin.com/in/guillaume-jom%C3%A9e-6627b5175/) |
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/jomee.jpeg?raw=true" alt="Anida" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/bourgeois.jpg?raw=true" alt="Luc" width="150"/> | |
-| **Guillaume Jomée** | **Rémi Bourgeois** | |
+| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/bourgeois.jpg?raw=true" alt="Remi" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/zehner.jpg?raw=true" alt="Paul" width="150"/> | |
+| **Rémi Bourgeois** | **Paul Zehner** | |
 | Research Engineer, Ph.D. | Research Engineer, Ph.D. | |
-| [Linkedin](https://www.linkedin.com/in/guillaume-jom%C3%A9e-6627b5175/) | [Linkedin](https://www.linkedin.com/in/remi-bourgeois/) | |
-
-
-
-# Main TRUST Contributors (STMF / LMEC)
-
-| | | |
-| :---: | :---: | :---: |
-| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/antoine.jpeg?raw=true" alt="Antoine" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/yannick.jpg?raw=true" alt="Yannick" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/corentin.jpg?raw=true" alt="Corentin" width="150"/> |
-| **Antoine Gerschenfeld** | **Yannick Gorsse** | **Corentin Reiss** |
-| Research Engineer, Ph.D. | Research Engineer, Ph.D. | Ph.D. Student |
-| | [Linkedin](https://www.linkedin.com/in/yannick-gorsse-45770786/), [Research Gate](https://www.researchgate.net/profile/Yannick-Gorsse) | [Linkedin](https://www.linkedin.com/in/corentin-reiss-903840183/)|
+| [Linkedin](https://www.linkedin.com/in/remi-bourgeois/) | [Linkedin](https://www.linkedin.com/in/paul-zehner-a196a184/), [ORCID](https://orcid.org/0000-0002-4811-0079), [Research Gate](https://www.researchgate.net/profile/Paul-Zehner) | |
 
 # Former TRUST & Trio_U Developers
 
+- **Antoine Gerschenfeld**
+- **Yannick Gorsse**
+- **Corentin Reiss**
 - **Gauthier Fauchet** (former TRUST responsible)
 - **Stéphane Veys**
 - **Thomas Fortin**
