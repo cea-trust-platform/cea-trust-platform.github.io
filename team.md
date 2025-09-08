@@ -38,7 +38,9 @@ td, th {
 | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/bourgeois.jpg?raw=true" alt="Remi" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/zehner.jpg?raw=true" alt="Paul" width="150"/> | |
 | **Rémi Bourgeois** | **Paul Zehner** | |
 | Research Engineer, Ph.D. | Research Engineer, Ph.D. | |
-| [Linkedin](https://www.linkedin.com/in/remi-bourgeois/) | [Linkedin](https://www.linkedin.com/in/paul-zehner-a196a184/), [ORCID](https://orcid.org/0000-0002-4811-0079), [Research Gate](https://www.researchgate.net/profile/Paul-Zehner) | |
+| [Linkedin](https://www.linkedin.com/in/remi-bourgeois/), [Blog](https://rbourgeois33.github.io/) | [Linkedin](https://www.linkedin.com/in/paul-zehner-a196a184/), [ORCID](https://orcid.org/0000-0002-4811-0079), [Research Gate](https://www.researchgate.net/profile/Paul-Zehner) | |
+
+
 
 # Former TRUST & Trio_U Developers
 
