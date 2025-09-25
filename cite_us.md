@@ -6,49 +6,38 @@ description: Cite us!
 
 # 📚 How to cite TRUST
 
-If you use **TRUST** in your work, we would be grateful if you cite us using one of the formats below: 
+If you use **TRUST** for your work, we would be grateful if you cite us using one of the formats below: 
 
 ## 📖 Citation formats
 
 ### 📋 BibTeX
-<details>
-<summary><strong>Show BibTeX citation</strong></summary>
 
-
-@inproceedings{saikali2024performances,
-  title={Performances of the CFD open-source HPC platform TRUST on GPUs},
-  author={Saikali, Elie and Bruneton, Adrien and Ledac, Pierre},
-  booktitle={EPJ Web of Conferences},
-  volume={302},
-  pages={03004},
-  year={2024},
-  organization={EDP Sciences}
+```bibtex
+@article{saikali2025trust,
+  title={TRUST: the HPC open-source CFD platform--from CPU to GPU},
+  author={Saikali, Elie and Bruneton, Adrien and Ledac, Pierre and Bourgeois, Remi},
+  journal={EPJ Nuclear Sciences \& Technologies},
+  volume={11},
+  pages={53},
+  year={2025},
+  publisher={EDP Sciences}
 }
-
-
-</details>
+```
 
 
 ### ✍️ Markdown
-<details>
-<summary><strong>Show Markdown citation</strong></summary>
 
+```markdown
+Saikali, E., Bruneton, A., Ledac, P., & Bourgeois, R. (2025). TRUST: the HPC open-source CFD platform--from CPU to GPU. *EPJ Nuclear Sciences & Technologies*, 11, 53. EDP Sciences.
+```
 
-Saikali, E., Bruneton, A., & Ledac, P. (2024). Performances of the CFD open-source HPC platform TRUST on GPUs. In *EPJ Web of Conferences* (Vol. 302, p. 03004). EDP Sciences.
-
-</details>
 
 
 ### 📝 reStructuredText
-<details>
-<summary><strong>Show reStructuredText citation</strong></summary>
 
-Saikali, E., Bruneton, A., & Ledac, P. (2024). Performances of the CFD open-source HPC platform TRUST on GPUs. In *EPJ Web of Conferences* (Vol. 302, p. 03004). EDP Sciences.
-
-
-</details>
-
-
+```rst
+Saikali, E., Bruneton, A., Ledac, P., & Bourgeois, R. (2025). TRUST: the HPC open-source CFD platform--from CPU to GPU. *EPJ Nuclear Sciences & Technologies*, **11**, 53. EDP Sciences.
+```
 
 ### 🙏 Thank you for your support!
 
