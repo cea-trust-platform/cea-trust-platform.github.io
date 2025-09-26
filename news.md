@@ -22,6 +22,24 @@ description: news
 
 ## Seminars and formations
 
-The **TRUST** team organise two user and two developper formations each year. Stay tunned for the date of the next ones.
+- On October 1st and 2nd the TrioCFD users’ day will take place at Palais des Congrès, Massy, near Paris. TrioCFD is one of the main application based on the **TRUST** platform, and focuses on small scale and CFD simulations.
+
+- The **TRUST** team organise two user and two developper formations each year. Stay tunned for the date of the next ones.
+
+## Trainings and Hackathon 
+
+- Training: Introduction to CUDA C++ *01/10 & 02/10 2025*. We are happy to host Nicolas Blin (Devtech @Nvidia) for his introductory course to GPU programming with CUDA C++. Topics included are: 
+   - Introduction: CUDA & GPU Architecture
+   - More hardware + modern GPU programming
+   - Reduces & Nsight Compute
+   - Hand on session
+
+- Hackathon: The **TRUST** team took part in the [NVidia GPU OpenHackathon](https://www.idris.fr/annonces/idris-gpu-hackathon-2025.html) initiative co-organised by IDRIS in May '25. The team was mentored directly by a DevTech from NVidia. This allowed to increase the expertise of the team in the profiling tools provided by NVidia, and to optimize the TRUST compute kernels already ported on GPUs. A similar initiative will follow on AMD architectures.
+
+## Last publication
+
+- A paper regarding the GPU porting of **TRUST** has been accepted in [EPJ Nuclear Sciences & Technologies](https://www.epj-n.org/articles/epjn/abs/2025/01/epjn20250034/epjn20250034.html).
+
+
 
 
