@@ -8,6 +8,8 @@ description: news
 
 ## Version Release & Relase Notes
 
+- **November 2025 :** Release of TRUST-V1.9.7 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.7)**), with the associated [release note](RN/v1_9_7.md).
+
 - **May 2025 :** Release of TRUST-V1.9.6 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.6)**), with the associated [release note](RN/v1_9_6.md).
 
 - **November 2024 :** Release of TRUST-V1.9.5 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.5)**), with the associated [release note](RN/v1_9_5.md).
