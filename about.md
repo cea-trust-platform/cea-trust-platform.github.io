@@ -6,7 +6,7 @@ description: About
 
 **TRUST** is a High Performance Computing (HPC) thermohydraulic engine for Computational Fluid Dynamics (CFD) developed at the Department of System and Structure Modelisation (DM2S) of the French Atomic Energy Commission (CEA).
 
-**TRUST** is an object-oriented open-source platform written in C++, with approximately 230K lines of code and about 2500 classes. The code is managed on Git and built via CMake. The code is massively parallel thanks to the Message Passing Interface (MPI). **TRUST** uses Doxygen to automatically generate a C++ API from its source code (click **[here](https://cea-trust-platform.readthedocs.io/en/latest/doxy/index.html)** to check the Doxygen documentation).
+**TRUST** is an object-oriented open-source platform written in C++, with approximately 230K lines of code and about 2500 classes. The code is managed on Git and built via CMake. The code is massively parallel thanks to the Message Passing Interface (MPI). **TRUST** uses Doxygen to automatically generate a C++ API from its source code (can be found in the **[documentation](https://cea-trust-platform.readthedocs.io/en/)**).
 
 The CFD platform has already been used to simulate a 1 m3 fuel cell hydrogen leakage scenario with 2 billion mesh elements using the Direct Numerical Simulation approach (DNS). The simulation was carried out on the IRENE-ROME cluster with 50K MPI processors.
 
