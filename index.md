@@ -17,7 +17,7 @@ However, a huge effort has been conducted recently, and now **TRUST** is able to
 
 **TRUST** is also progressively ported to support GPU acceleration, using the [Kokkos](https://kokkos.org/kokkos-core-wiki/) library. It has been selected to be a demonstrator of the [CExA](https://cexa-project.org/) project.  
 
-**TRUST** aslo serves as the kernel of several CEA's application codes. The [TrioCFD](https://triocfd.cea.fr/) software is an open source example of such codes. The main application of TrioCFD is turbulence modelling.
+**TRUST** also serves as the kernel of several CEA's application codes. The [TrioCFD](https://triocfd.cea.fr/) software is an open source example of such codes. The main application of TrioCFD is turbulence modelling.
 
 This software is OpenSource (**[BSD license](https://github.com/cea-trust-platform/trust-code/blob/master/License.txt)**), available **[here](https://github.com/cea-trust-platform/trust-code)** on GitHub. 
 

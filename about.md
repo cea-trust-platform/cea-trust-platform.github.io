@@ -44,7 +44,7 @@ Here are the main stages of the project's evolution, starting from the beginning
 
 - **2015 :** v1.7 - Separation **TRUST** & TrioCFD + switch to open-source
 
-- **2019 :** v1.8 - New polyheadral discretization (PolyMAC)
+- **2019 :** v1.8 - New polyhedral discretization (PolyMAC)
 
 - **2021 :** v1.8.4 - Multiphase problem + Weakly Compressible model
 

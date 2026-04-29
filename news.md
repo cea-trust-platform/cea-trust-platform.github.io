@@ -6,7 +6,7 @@ description: news
 
 # News
 
-## Version Release & Relase Notes
+## Version Release & Release Notes
 
 - **November 2025 :** Release of TRUST-V1.9.7 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.7)**), with the associated [release note](RN/v1_9_7.md).
 
@@ -24,7 +24,7 @@ description: news
 
 ## **TRUST**'s user and developper training
 
-- The **TRUST** team organise a user training in October's 9 and 10. The training is already full, stay tunned for the announcement of the next training dates.
+- The **TRUST** team organizes a user training on October 9 and 10. The training is already full, stay tuned for the announcement of the next training dates.
 
 ## Seminars
 
