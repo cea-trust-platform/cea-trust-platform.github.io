@@ -21,7 +21,7 @@ main:
     url: "/contact/"
     weight: 7
   - name: "Documentation"
-    url: "https://cea-trust-platform.readthedocs.io/en/latest/"
+    url: "https://cea-trust-platform.readthedocs.io/en/"
     weight: 8
 
 footer:
