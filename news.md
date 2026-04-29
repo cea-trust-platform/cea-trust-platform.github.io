@@ -22,23 +22,15 @@ description: news
 
 - **December 2022 :** Release of TRUST-V1.9.1 (click **[here](https://github.com/cea-trust-platform/trust-code/releases/tag/v1.9.1)**).
 
-## **TRUST**'s user and developper training
+## Trainings and Hackathon
 
-- The **TRUST** team organizes a user training on October 9 and 10. The training is already full, stay tuned for the announcement of the next training dates.
-
-## Seminars
-
-- On October 1st and 2nd the TrioCFD users’ day will take place at Palais des Congrès, Massy, near Paris. TrioCFD is one of the main application based on the **TRUST** platform, and focuses on small scale and CFD simulations.
-
-## Trainings and Hackathon 
-
-- Training: Introduction to CUDA C++ *01/10 & 02/10 2025*. We are happy to host Nicolas Blin (Devtech @Nvidia) for his introductory course to GPU programming with CUDA C++. Topics included are: 
+- **Training**: Introduction to CUDA C++ *(October 1–2, 2025)*. We were happy to host Nicolas Blin (Devtech @Nvidia) for his introductory course to GPU programming with CUDA C++. Topics included:
    - Introduction: CUDA & GPU Architecture
    - More hardware + modern GPU programming
-   - Reduces & Nsight Compute
-   - Hand on session
+   - Reductions & Nsight Compute
+   - Hands-on session
 
-- Hackathon: The **TRUST** team took part in the [NVidia GPU OpenHackathon](https://www.idris.fr/annonces/idris-gpu-hackathon-2025.html) initiative co-organised by IDRIS in May '25. The team was mentored directly by a DevTech from NVidia. This allowed to increase the expertise of the team in the profiling tools provided by NVidia, and to optimize the TRUST compute kernels already ported on GPUs. A similar initiative will follow on AMD architectures.
+- **Hackathon**: The **TRUST** team took part in the [NVidia GPU OpenHackathon](https://www.idris.fr/annonces/idris-gpu-hackathon-2025.html) initiative co-organized by IDRIS in May 2025. The team was mentored directly by a DevTech from NVidia. This allowed the team to deepen its expertise in NVidia profiling tools and to optimize the TRUST compute kernels already ported to GPUs. A similar initiative will follow on AMD architectures.
 
 ## Last publication
 

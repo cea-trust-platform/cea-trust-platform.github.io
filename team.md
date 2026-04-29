@@ -19,7 +19,7 @@ td, th {
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/adrien.jpg?raw=true" alt="Adrien" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/pierre.jpg?raw=true" alt="Pierre" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/elie.jpg?raw=true" alt="Élie" width="150"/> |
+| <img src="/images/social/adrien.jpg" alt="Adrien" width="150"/> | <img src="/images/social/pierre.jpg" alt="Pierre" width="150"/> | <img src="/images/social/elie.jpg" alt="Élie" width="150"/> |
 | **Adrien Bruneton** | **Pierre Ledac** | **Élie Saikali** |
 | Research Engineer | Research Engineer | Research Engineer, Ph.D. |
 | Head of the TRUST team | | |
@@ -28,14 +28,14 @@ td, th {
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/anida.jpg?raw=true" alt="Anida" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/luc.jpg?raw=true" alt="Luc" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/jomee.jpeg?raw=true" alt="GuillaumeJ" width="150"/>  |
+| <img src="/images/social/anida.jpg" alt="Anida" width="150"/> | <img src="/images/social/luc.jpg" alt="Luc" width="150"/> | <img src="/images/social/jomee.jpeg" alt="GuillaumeJ" width="150"/>  |
 | **Anida Khizar** | **Luc Lecointre** | **Guillaume Jomée** |
 | Research Engineer | Research Engineer, Ph.D. | Research Engineer, Ph.D. |
 | | [Linkedin](https://www.linkedin.com/in/luc-lecointre-269754a4/), [Research Gate](https://www.researchgate.net/profile/Luc-Lecointre) | [Linkedin](https://www.linkedin.com/in/guillaume-jom%C3%A9e-6627b5175/) , [Research Gate](https://www.researchgate.net/profile/Guillaume-Jomee-2) |
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/bourgeois.jpg?raw=true" alt="Remi" width="150"/> | <img src="https://github.com/cea-trust-platform/cea-trust-platform.github.io/blob/master/images/social/zehner.jpg?raw=true" alt="Paul" width="150"/> | |
+| <img src="/images/social/bourgeois.jpg" alt="Remi" width="150"/> | <img src="/images/social/zehner.jpg" alt="Paul" width="150"/> | |
 | **Rémi Bourgeois** | **Paul Zehner** | |
 | Research Engineer, Ph.D. | Research Engineer, Ph.D. | |
 | [Linkedin](https://www.linkedin.com/in/remi-bourgeois/), [Blog](https://rbourgeois33.github.io/) | [Linkedin](https://www.linkedin.com/in/paul-zehner-a196a184/), [ORCID](https://orcid.org/0000-0002-4811-0079), [Research Gate](https://www.researchgate.net/profile/Paul-Zehner) | |
