@@ -22,7 +22,7 @@ Using the **TRUST** post-processing format, it is possible to animate your simul
 
 # Historical background
 
-The acronym **TRUST** stands for TRioU Software for Thermohydraulics. The platform was born on June 2015 after splitting Trio_U software (version 1.7.1) in two parts: **TRUST** & **[TrioCFD](https://triocfd.cea.fr/)**. Both parts are now open-source and available **[here](https://github.com/cea-trust-platform)** on GitHub.
+The acronym **TRUST** stands for TRioU Software for Thermohydraulics. The platform was born on June 2015 after splitting Trio_U software (version 1.7.1) in two parts: **TRUST** & **[TrioCFD](https://triocfd.cea.fr/)**. Both parts are now open-source and available **[here](https://gitlab.com/cea-trust-platform/)** on GitLab.
 
 Here are the main stages of the project's evolution, starting from the beginning of the Trio_U project:
 
