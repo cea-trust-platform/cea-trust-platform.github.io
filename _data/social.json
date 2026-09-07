@@ -5,9 +5,9 @@
     "image": "images/social/cea.svg"
   },	
   {
-    "name": "Github",
-    "link": "https://github.com/cea-trust-platform/trust-code",
-    "image": "images/social/github.svg"
+    "name": "GitLab",
+    "link": "https://gitlab.com/cea-trust-platform/trust/trust-code",
+    "image": "images/social/gitlab.png"
   },
   {
     "name": "YouTube",
