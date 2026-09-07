@@ -19,6 +19,6 @@ However, a huge effort has been conducted recently, and now **TRUST** is able to
 
 **TRUST** also serves as the kernel of several CEA's application codes. The [TrioCFD](https://triocfd.cea.fr/) software is an open source example of such codes. The main application of TrioCFD is turbulence modelling.
 
-This software is OpenSource (**[BSD license](https://github.com/cea-trust-platform/trust-code/blob/master/License.txt)**), available **[here](https://github.com/cea-trust-platform/trust-code)** on GitHub. 
+This software is OpenSource (**[BSD license](https://gitlab.com/cea-trust-platform/trust/trust-code/-/raw/next/License.txt?ref_type=heads)**), available **[here](https://gitlab.com/cea-trust-platform/trust/trust-code)** on GitLab. 
 
 **TRUST** also relies on the following other open source products: [SALOME](https://www.salome-platform.org/?lang=fr), [MEDCoupling](https://github.com/SalomePlatform/medcoupling), [ICoCo](https://github.com/cea-trust-platform/icoco-coupling), [VisIt](https://visit-dav.github.io/visit-website/index.html), ...
